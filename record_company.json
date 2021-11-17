@@ -1,352 +1,351 @@
 [{
-    "id": 1,
-    "record_company": "Hegmann-Ratke",
-    "country": "Portugal",
-    "email": "gbrecon0@last.fm",
-    "year": 2005,
-    "phone": "402-980-6132"
-  }, {
-    "id": 2,
-    "record_company": "Gerhold Inc",
-    "country": "Japan",
-    "email": "mshurman1@friendfeed.com",
-    "year": 2001,
-    "phone": "897-609-8876"
-  }, {
-    "id": 3,
-    "record_company": "Hamill-Trantow",
-    "country": "China",
-    "email": "cheatherington2@umich.edu",
-    "year": 1994,
-    "phone": "127-482-7079"
-  }, {
-    "id": 4,
-    "record_company": "Rath LLC",
-    "country": "China",
-    "email": "lbalentyne3@imdb.com",
-    "year": 2011,
-    "phone": "493-342-1886"
-  }, {
-    "id": 5,
-    "record_company": "Shanahan and Sons",
-    "country": "Dominican Republic",
-    "email": "ibonsul4@howstuffworks.com",
-    "year": 2008,
-    "phone": "672-637-4084"
-  }, {
-    "id": 6,
-    "record_company": "Tromp-Auer",
-    "country": "Philippines",
-    "email": "aklesl5@youku.com",
-    "year": 1988,
-    "phone": "965-754-8493"
-  }, {
-    "id": 7,
-    "record_company": "Prohaska Inc",
-    "country": "Indonesia",
-    "email": "ddemarchi6@mac.com",
-    "year": 2001,
-    "phone": "868-452-6599"
-  }, {
-    "id": 8,
-    "record_company": "Corkery, Schimmel and Waelchi",
-    "country": "Greece",
-    "email": "mmaletratt7@nature.com",
-    "year": 2006,
-    "phone": "558-349-6637"
-  }, {
-    "id": 9,
-    "record_company": "Stoltenberg-Wuckert",
-    "country": "Jamaica",
-    "email": "bshelford8@hao123.com",
-    "year": 2011,
-    "phone": "106-705-6935"
-  }, {
-    "id": 10,
-    "record_company": "Daugherty Inc",
-    "country": "Sweden",
-    "email": "dnoblet9@apple.com",
-    "year": 2008,
-    "phone": "581-404-2350"
-  }, {
-    "id": 11,
-    "record_company": "Johnston, Herman and Lind",
-    "country": "France",
-    "email": "edowna@clickbank.net",
-    "year": 2012,
-    "phone": "717-945-7810"
-  }, {
-    "id": 12,
-    "record_company": "Wisozk-Stracke",
-    "country": "Thailand",
-    "email": "alowthorpeb@latimes.com",
-    "year": 2002,
-    "phone": "429-984-5471"
-  }, {
-    "id": 13,
-    "record_company": "Kunde, Stracke and Sporer",
-    "country": "China",
-    "email": "cgarretsonc@photobucket.com",
-    "year": 1993,
-    "phone": "821-144-4920"
-  }, {
-    "id": 14,
-    "record_company": "Boyer, Balistreri and McLaughlin",
-    "country": "Colombia",
-    "email": "escamerdend@forbes.com",
-    "year": 2008,
-    "phone": "749-594-0662"
-  }, {
-    "id": 15,
-    "record_company": "Gutkowski, Mayer and Pollich",
-    "country": "China",
-    "email": "sinnese@ehow.com",
-    "year": 2000,
-    "phone": "997-965-9974"
-  }, {
-    "id": 16,
-    "record_company": "Farrell, Kihn and O'Connell",
-    "country": "Finland",
-    "email": "msaltsbergerf@discovery.com",
-    "year": 2005,
-    "phone": "883-505-9084"
-  }, {
-    "id": 17,
-    "record_company": "Leuschke, Simonis and Ratke",
-    "country": "Venezuela",
-    "email": "sarnaudotg@linkedin.com",
-    "year": 2001,
-    "phone": "228-943-3493"
-  }, {
-    "id": 18,
-    "record_company": "O'Kon LLC",
-    "country": "Mexico",
-    "email": "jstanbroh@tinyurl.com",
-    "year": 2008,
-    "phone": "118-784-2621"
-  }, {
-    "id": 19,
-    "record_company": "Johns and Sons",
-    "country": "Dominican Republic",
-    "email": "lmoncreifi@msu.edu",
-    "year": 1986,
-    "phone": "777-963-3814"
-  }, {
-    "id": 20,
-    "record_company": "Beahan Group",
-    "country": "Indonesia",
-    "email": "tcaveillj@purevolume.com",
-    "year": 2003,
-    "phone": "735-510-5347"
-  }, {
-    "id": 21,
-    "record_company": "Marquardt, Gottlieb and Kiehn",
-    "country": "Colombia",
-    "email": "kmckeurtonk@omniture.com",
-    "year": 1995,
-    "phone": "688-541-6629"
-  }, {
-    "id": 22,
-    "record_company": "Sanford-Torp",
-    "country": "Bosnia and Herzegovina",
-    "email": "ldeverall@vimeo.com",
-    "year": 1988,
-    "phone": "930-490-1576"
-  }, {
-    "id": 23,
-    "record_company": "Crooks, Hoeger and Durgan",
-    "country": "Botswana",
-    "email": "acalafatem@springer.com",
-    "year": 1993,
-    "phone": "995-959-2319"
-  }, {
-    "id": 24,
-    "record_company": "Durgan Group",
-    "country": "Iran",
-    "email": "gmccarthyn@google.fr",
-    "year": 1996,
-    "phone": "373-623-5361"
-  }, {
-    "id": 25,
-    "record_company": "Effertz, Purdy and Johnson",
-    "country": "Peru",
-    "email": "gcorneljeso@go.com",
-    "year": 1989,
-    "phone": "807-593-6388"
-  }, {
-    "id": 26,
-    "record_company": "Hermann, Gorczany and Bayer",
-    "country": "Liberia",
-    "email": "hmchardyp@weibo.com",
-    "year": 1999,
-    "phone": "139-769-5594"
-  }, {
-    "id": 27,
-    "record_company": "Stoltenberg, Toy and Moore",
-    "country": "Indonesia",
-    "email": "ltreadwellq@boston.com",
-    "year": 2008,
-    "phone": "983-954-5294"
-  }, {
-    "id": 28,
-    "record_company": "Hermiston-Champlin",
-    "country": "Bulgaria",
-    "email": "abenardetr@barnesandnoble.com",
-    "year": 1996,
-    "phone": "742-173-1188"
-  }, {
-    "id": 29,
-    "record_company": "Lockman Inc",
-    "country": "Tunisia",
-    "email": "rpetruss@time.com",
-    "year": 1998,
-    "phone": "127-413-5260"
-  }, {
-    "id": 30,
-    "record_company": "Bins-Hermiston",
-    "country": "China",
-    "email": "ejacmardt@reference.com",
-    "year": 2009,
-    "phone": "965-835-1024"
-  }, {
-    "id": 31,
-    "record_company": "Nitzsche-Marks",
-    "country": "Peru",
-    "email": "bdurkinu@xing.com",
-    "year": 2003,
-    "phone": "982-450-4876"
-  }, {
-    "id": 32,
-    "record_company": "White-Boyer",
-    "country": "Poland",
-    "email": "ccadev@wsj.com",
-    "year": 2012,
-    "phone": "946-633-7825"
-  }, {
-    "id": 33,
-    "record_company": "Davis Group",
-    "country": "Philippines",
-    "email": "ywrothamw@so-net.ne.jp",
-    "year": 2005,
-    "phone": "757-458-5583"
-  }, {
-    "id": 34,
-    "record_company": "Hartmann and Sons",
-    "country": "Indonesia",
-    "email": "rcawx@bravesites.com",
-    "year": 1988,
-    "phone": "388-235-9803"
-  }, {
-    "id": 35,
-    "record_company": "Zemlak-West",
-    "country": "Russia",
-    "email": "ktristramy@jimdo.com",
-    "year": 2003,
-    "phone": "827-858-9587"
-  }, {
-    "id": 36,
-    "record_company": "Bayer-Vandervort",
-    "country": "Russia",
-    "email": "eszimoniz@thetimes.co.uk",
-    "year": 2008,
-    "phone": "128-209-4354"
-  }, {
-    "id": 37,
-    "record_company": "Watsica Inc",
-    "country": "Brazil",
-    "email": "atwaite10@omniture.com",
-    "year": 2006,
-    "phone": "551-848-7636"
-  }, {
-    "id": 38,
-    "record_company": "Reynolds LLC",
-    "country": "Netherlands",
-    "email": "nscamp11@archive.org",
-    "year": 1988,
-    "phone": "103-191-8610"
-  }, {
-    "id": 39,
-    "record_company": "Cole, Koch and Funk",
-    "country": "France",
-    "email": "plugden12@wikipedia.org",
-    "year": 2008,
-    "phone": "983-204-6221"
-  }, {
-    "id": 40,
-    "record_company": "Schamberger and Sons",
-    "country": "Portugal",
-    "email": "sargue13@cnet.com",
-    "year": 1988,
-    "phone": "921-640-8484"
-  }, {
-    "id": 41,
-    "record_company": "Dach, Aufderhar and Quigley",
-    "country": "Vietnam",
-    "email": "jrumbelow14@ning.com",
-    "year": 2009,
-    "phone": "128-952-3494"
-  }, {
-    "id": 42,
-    "record_company": "Donnelly Group",
-    "country": "Dominican Republic",
-    "email": "dberzons15@house.gov",
-    "year": 2008,
-    "phone": "995-390-9735"
-  }, {
-    "id": 43,
-    "record_company": "Wehner Inc",
-    "country": "China",
-    "email": "drees16@booking.com",
-    "year": 2004,
-    "phone": "534-282-0741"
-  }, {
-    "id": 44,
-    "record_company": "Parisian LLC",
-    "country": "Cameroon",
-    "email": "mlayson17@google.com",
-    "year": 2009,
-    "phone": "456-819-0454"
-  }, {
-    "id": 45,
-    "record_company": "Heidenreich Group",
-    "country": "Indonesia",
-    "email": "lbaudesson18@reddit.com",
-    "year": 1990,
-    "phone": "239-190-1105"
-  }, {
-    "id": 46,
-    "record_company": "Conn Inc",
-    "country": "Hungary",
-    "email": "dnewlands19@vimeo.com",
-    "year": 1996,
-    "phone": "652-375-2791"
-  }, {
-    "id": 47,
-    "record_company": "Botsford, Altenwerth and Nienow",
-    "country": "Philippines",
-    "email": "rtippings1a@webmd.com",
-    "year": 2002,
-    "phone": "929-673-3939"
-  }, {
-    "id": 48,
-    "record_company": "Rutherford Group",
-    "country": "China",
-    "email": "lmulchrone1b@newsvine.com",
-    "year": 2006,
-    "phone": "697-281-0388"
-  }, {
-    "id": 49,
-    "record_company": "Kihn-Bernhard",
-    "country": "Dominican Republic",
-    "email": "eolenane1c@boston.com",
-    "year": 2005,
-    "phone": "414-561-5755"
-  }, {
-    "id": 50,
-    "record_company": "Bogan, Lowe and Balistreri",
-    "country": "Indonesia",
-    "email": "aadamovich1d@cbsnews.com",
-    "year": 2012,
-    "phone": "551-295-0474"
-  }]
-  
+  "id": 1,
+  "record_company": "Lemke, Parker and Halvorson",
+  "country": "Colombia",
+  "email": "phewkin0@hp.com",
+  "year": 2007,
+  "rapper_id": 23
+}, {
+  "id": 2,
+  "record_company": "Durgan-Dickens",
+  "country": "Guatemala",
+  "email": "fjosupeit1@foxnews.com",
+  "year": 1997,
+  "rapper_id": 46
+}, {
+  "id": 3,
+  "record_company": "Kiehn, Gleichner and Hauck",
+  "country": "Guatemala",
+  "email": "kkoop2@theguardian.com",
+  "year": 1992,
+  "rapper_id": 4
+}, {
+  "id": 4,
+  "record_company": "Wyman Inc",
+  "country": "France",
+  "email": "ykorneev3@ihg.com",
+  "year": 1988,
+  "rapper_id": 11
+}, {
+  "id": 5,
+  "record_company": "Kuhic and Sons",
+  "country": "China",
+  "email": "nrulten4@aboutads.info",
+  "year": 2011,
+  "rapper_id": 3
+}, {
+  "id": 6,
+  "record_company": "Luettgen-Senger",
+  "country": "Mexico",
+  "email": "dpiercey5@usa.gov",
+  "year": 2009,
+  "rapper_id": 38
+}, {
+  "id": 7,
+  "record_company": "Barrows, Stoltenberg and Boehm",
+  "country": "South Africa",
+  "email": "frenowden6@examiner.com",
+  "year": 1994,
+  "rapper_id": 48
+}, {
+  "id": 8,
+  "record_company": "Barrows, Rolfson and Stehr",
+  "country": "France",
+  "email": "vrossey7@slideshare.net",
+  "year": 1999,
+  "rapper_id": 32
+}, {
+  "id": 9,
+  "record_company": "White-Dickens",
+  "country": "Portugal",
+  "email": "jtedahl8@google.com",
+  "year": 2003,
+  "rapper_id": 3
+}, {
+  "id": 10,
+  "record_company": "Kuhic-Donnelly",
+  "country": "China",
+  "email": "ppettyfer9@guardian.co.uk",
+  "year": 1988,
+  "rapper_id": 8
+}, {
+  "id": 11,
+  "record_company": "Stark Inc",
+  "country": "Netherlands",
+  "email": "dverea@go.com",
+  "year": 1994,
+  "rapper_id": 16
+}, {
+  "id": 12,
+  "record_company": "Ullrich Group",
+  "country": "Indonesia",
+  "email": "ckemeb@wikipedia.org",
+  "year": 1996,
+  "rapper_id": 14
+}, {
+  "id": 13,
+  "record_company": "Hand, McKenzie and Swift",
+  "country": "China",
+  "email": "tstickneyc@webnode.com",
+  "year": 2009,
+  "rapper_id": 16
+}, {
+  "id": 14,
+  "record_company": "Shields-Hagenes",
+  "country": "Chile",
+  "email": "nrushbyd@wiley.com",
+  "year": 2012,
+  "rapper_id": 2
+}, {
+  "id": 15,
+  "record_company": "Bergnaum Group",
+  "country": "Greece",
+  "email": "cpigginse@imdb.com",
+  "year": 1992,
+  "rapper_id": 12
+}, {
+  "id": 16,
+  "record_company": "Koss, Daugherty and Krajcik",
+  "country": "Russia",
+  "email": "wurreyf@netvibes.com",
+  "year": 1998,
+  "rapper_id": 6
+}, {
+  "id": 17,
+  "record_company": "Hodkiewicz, Aufderhar and Hahn",
+  "country": "Norway",
+  "email": "rmoorerudg@smugmug.com",
+  "year": 2008,
+  "rapper_id": 24
+}, {
+  "id": 18,
+  "record_company": "Rutherford, Kub and Predovic",
+  "country": "Indonesia",
+  "email": "tmclleeseh@youtu.be",
+  "year": 1976,
+  "rapper_id": 2
+}, {
+  "id": 19,
+  "record_company": "Harber-Friesen",
+  "country": "Rwanda",
+  "email": "krubinowitschi@nsw.gov.au",
+  "year": 1987,
+  "rapper_id": 21
+}, {
+  "id": 20,
+  "record_company": "Davis, Waelchi and Balistreri",
+  "country": "China",
+  "email": "ddustj@examiner.com",
+  "year": 2011,
+  "rapper_id": 35
+}, {
+  "id": 21,
+  "record_company": "Haag-Pagac",
+  "country": "China",
+  "email": "lburrellsk@hugedomains.com",
+  "year": 2006,
+  "rapper_id": 1
+}, {
+  "id": 22,
+  "record_company": "Okuneva-Cremin",
+  "country": "China",
+  "email": "bcamplingl@usa.gov",
+  "year": 1995,
+  "rapper_id": 6
+}, {
+  "id": 23,
+  "record_company": "Schumm Inc",
+  "country": "South Africa",
+  "email": "bgozzettm@google.cn",
+  "year": 1992,
+  "rapper_id": 14
+}, {
+  "id": 24,
+  "record_company": "Wilderman Inc",
+  "country": "Brazil",
+  "email": "gammern@rediff.com",
+  "year": 2009,
+  "rapper_id": 35
+}, {
+  "id": 25,
+  "record_company": "Mosciski, Rohan and Stamm",
+  "country": "Mongolia",
+  "email": "ebengougho@merriam-webster.com",
+  "year": 2005,
+  "rapper_id": 16
+}, {
+  "id": 26,
+  "record_company": "Brakus LLC",
+  "country": "Russia",
+  "email": "gdinisp@woothemes.com",
+  "year": 1999,
+  "rapper_id": 3
+}, {
+  "id": 27,
+  "record_company": "Auer Inc",
+  "country": "China",
+  "email": "kbentzenq@ehow.com",
+  "year": 1992,
+  "rapper_id": 12
+}, {
+  "id": 28,
+  "record_company": "Harris, Langosh and Cremin",
+  "country": "Indonesia",
+  "email": "wvernhamr@springer.com",
+  "year": 2008,
+  "rapper_id": 46
+}, {
+  "id": 29,
+  "record_company": "Gusikowski LLC",
+  "country": "Philippines",
+  "email": "rmccannys@narod.ru",
+  "year": 1990,
+  "rapper_id": 19
+}, {
+  "id": 30,
+  "record_company": "Tillman, Kautzer and Kessler",
+  "country": "Philippines",
+  "email": "kscarlett@slideshare.net",
+  "year": 2005,
+  "rapper_id": 15
+}, {
+  "id": 31,
+  "record_company": "Gulgowski-Prohaska",
+  "country": "China",
+  "email": "pcanasu@miibeian.gov.cn",
+  "year": 1989,
+  "rapper_id": 1
+}, {
+  "id": 32,
+  "record_company": "Boyer-Rolfson",
+  "country": "Indonesia",
+  "email": "abooelnv@skype.com",
+  "year": 2004,
+  "rapper_id": 48
+}, {
+  "id": 33,
+  "record_company": "Crona, Graham and Harris",
+  "country": "Peru",
+  "email": "aproudlovew@google.co.uk",
+  "year": 2011,
+  "rapper_id": 8
+}, {
+  "id": 34,
+  "record_company": "Hintz LLC",
+  "country": "Indonesia",
+  "email": "msargeauntx@oaic.gov.au",
+  "year": 2009,
+  "rapper_id": 19
+}, {
+  "id": 35,
+  "record_company": "Romaguera-Terry",
+  "country": "Albania",
+  "email": "blatchmorey@is.gd",
+  "year": 1992,
+  "rapper_id": 2
+}, {
+  "id": 36,
+  "record_company": "Braun and Sons",
+  "country": "Peru",
+  "email": "ofranekz@meetup.com",
+  "year": 2004,
+  "rapper_id": 9
+}, {
+  "id": 37,
+  "record_company": "Howe, Heathcote and Hackett",
+  "country": "Indonesia",
+  "email": "esaenz10@bloomberg.com",
+  "year": 2003,
+  "rapper_id": 1
+}, {
+  "id": 38,
+  "record_company": "Braun LLC",
+  "country": "China",
+  "email": "aocarmody11@psu.edu",
+  "year": 2006,
+  "rapper_id": 19
+}, {
+  "id": 39,
+  "record_company": "Stehr, Emmerich and Gutkowski",
+  "country": "Greece",
+  "email": "cdelmage12@berkeley.edu",
+  "year": 1998,
+  "rapper_id": 7
+}, {
+  "id": 40,
+  "record_company": "Goldner, Lowe and Turcotte",
+  "country": "Cayman Islands",
+  "email": "plabbey13@hatena.ne.jp",
+  "year": 2012,
+  "rapper_id": 18
+}, {
+  "id": 41,
+  "record_company": "Stokes, Kuhlman and Upton",
+  "country": "China",
+  "email": "rcure14@simplemachines.org",
+  "year": 1985,
+  "rapper_id": 17
+}, {
+  "id": 42,
+  "record_company": "MacGyver, Dach and Koss",
+  "country": "Czech Republic",
+  "email": "ishurrocks15@ovh.net",
+  "year": 2005,
+  "rapper_id": 20
+}, {
+  "id": 43,
+  "record_company": "Homenick LLC",
+  "country": "Brazil",
+  "email": "gkennally16@rakuten.co.jp",
+  "year": 2012,
+  "rapper_id": 27
+}, {
+  "id": 44,
+  "record_company": "Ziemann-Donnelly",
+  "country": "France",
+  "email": "sworkes17@sphinn.com",
+  "year": 1966,
+  "rapper_id": 37
+}, {
+  "id": 45,
+  "record_company": "Baumbach, Bartell and Mraz",
+  "country": "China",
+  "email": "hfullom18@umich.edu",
+  "year": 1993,
+  "rapper_id": 42
+}, {
+  "id": 46,
+  "record_company": "Witting, Price and Grimes",
+  "country": "Syria",
+  "email": "gworley19@vistaprint.com",
+  "year": 1994,
+  "rapper_id": 30
+}, {
+  "id": 47,
+  "record_company": "Mayer-Huels",
+  "country": "Dominican Republic",
+  "email": "lscandwright1a@google.it",
+  "year": 2008,
+  "rapper_id": 16
+}, {
+  "id": 48,
+  "record_company": "Bosco, Jast and Beier",
+  "country": "Indonesia",
+  "email": "jmaw1b@icq.com",
+  "year": 1992,
+  "rapper_id": 30
+}, {
+  "id": 49,
+  "record_company": "Rohan-Hammes",
+  "country": "Indonesia",
+  "email": "lstreeter1c@ibm.com",
+  "year": 2003,
+  "rapper_id": 37
+}, {
+  "id": 50,
+  "record_company": "Stanton-Huel",
+  "country": "Benin",
+  "email": "cwhistlecroft1d@dmoz.org",
+  "year": 1983,
+  "rapper_id": 7
+}]
