@@ -4,173 +4,173 @@
   "rap_name": "Walton",
   "spirit_animal": "Brown and yellow marshbird",
   "gender": "Genderqueer",
-  "record_id": 22
+  "record_id": [1]
 }, {
   "id": 2,
   "title": "Mrs",
   "rap_name": "Meadow Valley",
   "spirit_animal": "Blacksmith plover",
   "gender": "Genderqueer",
-  "record_id": 3
+  "record_id": [2]
 }, {
   "id": 3,
   "title": "Honorable",
   "rap_name": "Mandrake",
   "spirit_animal": "Squirrel, african bush",
   "gender": "Polygender",
-  "record_id": 21
+  "record_id": [3]
 }, {
   "id": 4,
   "title": "Mrs",
   "rap_name": "Straubel",
   "spirit_animal": "Falcon, peregrine",
   "gender": "Polygender",
-  "record_id": 23
+  "record_id": [4]
 }, {
   "id": 5,
   "title": "Mrs",
   "rap_name": "Park Meadow",
   "spirit_animal": "Blue waxbill",
   "gender": "Non-binary",
-  "record_id": 13
+  "record_id": [5]
 }, {
   "id": 6,
   "title": "Mrs",
   "rap_name": "Ramsey",
   "spirit_animal": "Red-tailed hawk",
   "gender": "Genderfluid",
-  "record_id": 8
+  "record_id": [6]
 }, {
   "id": 7,
   "title": "Mrs",
   "rap_name": "Doe Crossing",
   "spirit_animal": "Cockatoo, red-tailed",
   "gender": "Genderqueer",
-  "record_id": 13
+  "record_id": [7]
 }, {
   "id": 8,
   "title": "Mr",
   "rap_name": "Ridge Oak",
   "spirit_animal": "Leopard",
   "gender": "Genderfluid",
-  "record_id": 21
+  "record_id": [8]
 }, {
   "id": 9,
   "title": "Ms",
   "rap_name": "Scott",
   "spirit_animal": "Red-capped cardinal",
   "gender": "Agender",
-  "record_id": 10
+  "record_id": [9]
 }, {
   "id": 10,
   "title": "Mrs",
   "rap_name": "Linden",
   "spirit_animal": "Old world fruit bat (unidentified)",
   "gender": "Non-binary",
-  "record_id": 9
+  "record_id": [10]
 }, {
   "id": 11,
   "title": "Ms",
   "rap_name": "New Castle",
   "spirit_animal": "Indian giant squirrel",
   "gender": "Male",
-  "record_id": 25
+  "record_id": [11]
 }, {
   "id": 12,
   "title": "Honorable",
   "rap_name": "Declaration",
   "spirit_animal": "Red-billed hornbill",
   "gender": "Male",
-  "record_id": 4
+  "record_id": [12]
 }, {
   "id": 13,
   "title": "Honorable",
   "rap_name": "Randy",
   "spirit_animal": "Whale, killer",
   "gender": "Female",
-  "record_id": 17
+  "record_id": [13]
 }, {
   "id": 14,
   "title": "Mr",
   "rap_name": "Sutteridge",
   "spirit_animal": "Owl, australian masked",
   "gender": "Genderfluid",
-  "record_id": 14
+  "record_id": [14]
 }, {
   "id": 15,
   "title": "Mr",
   "rap_name": "Utah",
   "spirit_animal": "Asian false vampire bat",
   "gender": "Polygender",
-  "record_id": 12
+  "record_id": [15]
 }, {
   "id": 16,
   "title": "Rev",
   "rap_name": "Carpenter",
   "spirit_animal": "Openbill stork",
   "gender": "Genderqueer",
-  "record_id": 10
+  "record_id": [16]
 }, {
   "id": 17,
   "title": "Rev",
   "rap_name": "Everett",
   "spirit_animal": "Madagascar hawk owl",
   "gender": "Polygender",
-  "record_id": 13
+  "record_id": [17]
 }, {
   "id": 18,
   "title": "Ms",
   "rap_name": "Vera",
   "spirit_animal": "Kangaroo, black-faced",
   "gender": "Genderfluid",
-  "record_id": 5
+  "record_id": [18]
 }, {
   "id": 19,
   "title": "Dr",
   "rap_name": "Pond",
   "spirit_animal": "Ant (unidentified)",
   "gender": "Polygender",
-  "record_id": 20
+  "record_id": [19]
 }, {
   "id": 20,
   "title": "Honorable",
   "rap_name": "Manufacturers",
   "spirit_animal": "Gnu, brindled",
   "gender": "Polygender",
-  "record_id": 16
+  "record_id": [20]
 }, {
   "id": 21,
   "title": "Rev",
   "rap_name": "Lyons",
   "spirit_animal": "Otter, small-clawed",
   "gender": "Male",
-  "record_id": 13
+  "record_id": [21]
 }, {
   "id": 22,
   "title": "Mr",
   "rap_name": "Cardinal",
   "spirit_animal": "Raccoon, crab-eating",
   "gender": "Bigender",
-  "record_id": 23
+  "record_id": [22]
 }, {
   "id": 23,
   "title": "Rev",
   "rap_name": "Linden",
   "spirit_animal": "Steller sea lion",
   "gender": "Genderqueer",
-  "record_id": 8
+  "record_id": [23]
 }, {
   "id": 24,
   "title": "Mrs",
   "rap_name": "Carberry",
   "spirit_animal": "Dusky gull",
   "gender": "Agender",
-  "record_id": 10
+  "record_id": [24]
 }, {
   "id": 25,
   "title": "Mr",
   "rap_name": "Waubesa",
   "spirit_animal": "Cape starling",
   "gender": "Bigender",
-  "record_id": 19
+  "record_id": [25]
 }]

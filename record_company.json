@@ -4,173 +4,173 @@
   "country": "Philippines",
   "email": "lrobertz0@harvard.edu",
   "year": 1997,
-  "owner_of_rapper": 24
+  "owner_of_rapper": [1]
 }, {
   "id": 2,
   "record_company": "Toy LLC",
   "country": "Brazil",
   "email": "hwoltman1@dedecms.com",
   "year": 1991,
-  "owner_of_rapper": 15
+  "owner_of_rapper": [2]
 }, {
   "id": 3,
   "record_company": "Schuster Inc",
   "country": "Malawi",
   "email": "lmenilove2@ezinearticles.com",
   "year": 2010,
-  "owner_of_rapper": 2
+  "owner_of_rapper": [3]
 }, {
   "id": 4,
   "record_company": "Wintheiser, Conn and Denesik",
   "country": "China",
   "email": "cgockelen3@nbcnews.com",
   "year": 2004,
-  "owner_of_rapper": 12
+  "owner_of_rapper": [4]
 }, {
   "id": 5,
   "record_company": "Hodkiewicz LLC",
   "country": "Mauritius",
   "email": "bbootland4@people.com.cn",
   "year": 2007,
-  "owner_of_rapper": 18
+  "owner_of_rapper": [5]
 }, {
   "id": 6,
   "record_company": "Nader, Okuneva and Hagenes",
   "country": "Mexico",
   "email": "rmeekin5@thetimes.co.uk",
   "year": 1958,
-  "owner_of_rapper": 5
+  "owner_of_rapper": [6]
 }, {
   "id": 7,
   "record_company": "Pagac, Conn and Ortiz",
   "country": "Liberia",
   "email": "cshadfourth6@businesswire.com",
   "year": 2000,
-  "owner_of_rapper": 11
+  "owner_of_rapper": [7]
 }, {
   "id": 8,
   "record_company": "Gleason-Bednar",
   "country": "Philippines",
   "email": "dwasiela7@businessinsider.com",
   "year": 2002,
-  "owner_of_rapper": [6, 23]
+  "owner_of_rapper": [8]
 }, {
   "id": 9,
   "record_company": "Yundt-Schaefer",
   "country": "Botswana",
   "email": "cjulyan8@nsw.gov.au",
   "year": 1999,
-  "owner_of_rapper": 10
+  "owner_of_rapper": [9]
 }, {
   "id": 10,
   "record_company": "Swaniawski, Gorczany and Kiehn",
   "country": "China",
   "email": "sdimbylow9@ibm.com",
   "year": 2011,
-  "owner_of_rapper": [9, 16, 24]
+  "owner_of_rapper": [10]
 }, {
   "id": 11,
   "record_company": "Metz-Blick",
   "country": "Russia",
   "email": "smeasena@360.cn",
   "year": 2001,
-  "owner_of_rapper": 23
+  "owner_of_rapper": [11]
 }, {
   "id": 12,
   "record_company": "Mante, Sanford and Kiehn",
   "country": "Sweden",
   "email": "pbrigginshawb@auda.org.au",
   "year": 1994,
-  "owner_of_rapper": 15
+  "owner_of_rapper": [12]
 }, {
   "id": 13,
   "record_company": "Ratke, Grady and Kunze",
   "country": "Indonesia",
   "email": "gseilmannc@comsenz.com",
   "year": 2011,
-  "owner_of_rapper": [5, 7, 17, 21]
+  "owner_of_rapper": [13]
 }, {
   "id": 14,
   "record_company": "Gulgowski, Kunde and Mann",
   "country": "Indonesia",
   "email": "pwhortond@msn.com",
   "year": 1998,
-  "owner_of_rapper": 14
+  "owner_of_rapper": [14]
 }, {
   "id": 15,
   "record_company": "Conroy-Ullrich",
   "country": "China",
   "email": "dpoulneye@bravesites.com",
   "year": 1996,
-  "owner_of_rapper": 21
+  "owner_of_rapper": [15]
 }, {
   "id": 16,
   "record_company": "Brakus Inc",
   "country": "Indonesia",
   "email": "hdorrof@ftc.gov",
   "year": 1993,
-  "owner_of_rapper": 20
+  "owner_of_rapper": [16]
 }, {
   "id": 17,
   "record_company": "Shanahan, Marquardt and Kiehn",
   "country": "China",
   "email": "nriggsg@utexas.edu",
   "year": 2000,
-  "owner_of_rapper": 13
+  "owner_of_rapper": [17]
 }, {
   "id": 18,
   "record_company": "Kassulke Group",
   "country": "Honduras",
   "email": "ozelleyh@geocities.jp",
   "year": 1995,
-  "owner_of_rapper": 13
+  "owner_of_rapper": [18]
 }, {
   "id": 19,
   "record_company": "Hudson, Bernhard and Gutmann",
   "country": "Costa Rica",
   "email": "hhenrionoti@netvibes.com",
   "year": 2009,
-  "owner_of_rapper": 25
+  "owner_of_rapper": [19]
 }, {
   "id": 20,
   "record_company": "Dach-Sauer",
   "country": "Hungary",
   "email": "wguinnessj@canalblog.com",
   "year": 2012,
-  "owner_of_rapper": 19
+  "owner_of_rapper": [20]
 }, {
   "id": 21,
   "record_company": "Zulauf-Lowe",
   "country": "Argentina",
   "email": "pohartigank@microsoft.com",
   "year": 2005,
-  "owner_of_rapper": [3, 8]
+  "owner_of_rapper": [21]
 }, {
   "id": 22,
   "record_company": "Goldner and Sons",
   "country": "Brazil",
   "email": "jrobkerl@altervista.org",
   "year": 2000,
-  "owner_of_rapper": 1
+  "owner_of_rapper": [22]
 }, {
   "id": 23,
   "record_company": "Senger-Goodwin",
   "country": "Russia",
   "email": "mkarbym@howstuffworks.com",
   "year": 2012,
-  "owner_of_rapper": [4, 22]
+  "owner_of_rapper": [23]
 }, {
   "id": 24,
   "record_company": "Nicolas, Nolan and Corkery",
   "country": "South Africa",
   "email": "ckovelmannn@canalblog.com",
   "year": 2011,
-  "owner_of_rapper": 2
+  "owner_of_rapper": [24]
 }, {
   "id": 25,
   "record_company": "Rutherford, Murazik and Heidenreich",
   "country": "Sweden",
   "email": "hcopemano@sakura.ne.jp",
   "year": 1996,
-  "owner_of_rapper": 11
+  "owner_of_rapper": [25]
 }]
