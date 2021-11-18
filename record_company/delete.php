@@ -5,6 +5,7 @@ require_once "../functions.php";
 
 // Hämta metoden
 $requestMethod = $_SERVER["REQUEST_METHOD"];
+$records = loadJson("../record_company.json");
 
 // Våran Json data från vilken fil
 $records = loadJson("../record_company.json");
@@ -28,7 +29,10 @@ if ($requestMethod === "DELETE") {
 
     $id = $requestData["id"];
     $found = false;
+<<<<<<< HEAD
 
+=======
+>>>>>>> Delete
     // Går igenom idn och tar bort
     foreach($records as $index => $record){
     if($record["id"] === $id) {
@@ -41,12 +45,20 @@ if ($requestMethod === "DELETE") {
         sendJson(
             [
                 "code" => 2,
+<<<<<<< HEAD
                 "message" => "The record Company does not exist"
             ],
             404 
         );
     }
 
+=======
+                "message" => "The recor company by `id` does not exist"
+            ],
+            404
+        );
+    }
+>>>>>>> Delete
     // Uppdaterar filen
     saveJson("../record_company.json", $records);
     sendJson(["id" => $id]);
