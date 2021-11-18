@@ -173,4 +173,44 @@
   "spirit_animal": "Cape starling",
   "gender": "Bigender",
   "record_id": [25]
+},
+{
+  "id": 26,
+  "title": "Mr",
+  "rap_name": "Eyyoo",
+  "spirit_animal": "horse",
+  "gender": "Male",
+  "record_id": [26]
+},
+{
+  "id": 27,
+  "title": "Mrs",
+  "rap_name": "Yoyoyo",
+  "spirit_animal": "cat",
+  "gender": "Female",
+  "record_id": [27]
+},
+{
+  "id": 28,
+  "title": "Dr",
+  "rap_name": "Allan",
+  "spirit_animal": "dog",
+  "gender": "Male",
+  "record_id": [28]
+},
+{
+  "id": 29,
+  "title": "Mr",
+  "rap_name": "Ey",
+  "spirit_animal": "Cape starling",
+  "gender": "Bigender",
+  "record_id": [29]
+},
+{
+  "id": 30,
+  "title": "Dr",
+  "rap_name": "Sho",
+  "spirit_animal": "Cat horse",
+  "gender": "Bigender",
+  "record_id": [30]
 }]
