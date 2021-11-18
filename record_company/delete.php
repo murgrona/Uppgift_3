@@ -22,31 +22,27 @@ if ($requestMethod === "DELETE") {
         );
     }
     $id = $requestData["id"];
-
+    $found = false;
     // Går igenom idn och tar bort
-    foreach($recordsDecode as $index => $user){
-    if($user["id"] === $id) {
-        //$found = true;
-        array_splice($recordsDecode, $index, 1);
+    foreach($records as $index => $record){
+    if($record["id"] === $id) {
+        $found = true;
+        array_splice($records, $index, 1);
         break;
         }
     }
+    if ($found === false) {
+        sendJson(
+            [
+                "code" => 2,
+                "message" => "The record Company does not exist"
+            ],
+            400 
+        );
+    }
 
     // Uppdaterar filen
-    $json = json_encode($index, JSON_PRETTY_PRINT);
-    file_put_contents("../record_company.json", $json);
+    saveJson("../record_company.json", $records);
     sendJson(["id" => $id]);
 };
-/*$getRecord = file_get_contents("../record_company.json");
-$recordsDecode = json_decode($getRecord, true);
-
-
-$found = false;
-
-if($requestMethod == "DELETE") {
-    
-    
-    saveJson("../record_company.json", $recordsDecode);
-    sendJson(["id" => $id]);
-}*/
 ?>
