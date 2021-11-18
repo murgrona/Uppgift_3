@@ -6,6 +6,10 @@ require_once "../functions.php";
 // Hämta metoden
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
+// Våran Json data från vilken fil
+$records = loadJson("../record_company.json");
+$rappers = loadJson("../rap_name.json");
+
 // Hämta Json data
 $data = file_get_contents("php://input");
 $requestData = json_decode($data, true);
@@ -21,8 +25,10 @@ if ($requestMethod === "DELETE") {
             400
         );
     }
+
     $id = $requestData["id"];
     $found = false;
+
     // Går igenom idn och tar bort
     foreach($records as $index => $record){
     if($record["id"] === $id) {
@@ -37,7 +43,7 @@ if ($requestMethod === "DELETE") {
                 "code" => 2,
                 "message" => "The record Company does not exist"
             ],
-            400 
+            404 
         );
     }
 
