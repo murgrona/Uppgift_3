@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(-1);
 require_once "../functions.php";
 
@@ -20,6 +21,7 @@ if($requestMethod === "POST") {
 
     //$getUsers = file_get_contents("../rap_name.json");
     $rapNames = loadJson("../rap_name.json");
+    $
 
     $newRapper = [
         "title" => $requestData["title"],

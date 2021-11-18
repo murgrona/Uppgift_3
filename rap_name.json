@@ -1,410 +1,176 @@
-[
-    {
-        "id": 1,
-        "title": "Rev",
-        "rap_name": "Drewry",
-        "spirit_animal": "Wallaby, euro",
-        "gender": "Genderfluid",
-        "city": "Amboasary"
-    },
-    {
-        "id": 2,
-        "title": "Dr",
-        "rap_name": "Shelley",
-        "spirit_animal": "Rock dove",
-        "gender": "Polygender",
-        "city": "Camlachie"
-    },
-    {
-        "id": 3,
-        "title": "Honorable",
-        "rap_name": "Comanche",
-        "spirit_animal": "Puma, south american",
-        "gender": "Male",
-        "city": "Burrel"
-    },
-    {
-        "id": 4,
-        "title": "Mrs",
-        "rap_name": "Eagle Crest",
-        "spirit_animal": "Dolphin, bottle-nose",
-        "gender": "Agender",
-        "city": "La Clotilde"
-    },
-    {
-        "id": 5,
-        "title": "Ms",
-        "rap_name": "South",
-        "spirit_animal": "Grey mouse lemur",
-        "gender": "Male",
-        "city": "Tabant"
-    },
-    {
-        "id": 6,
-        "title": "Honorable",
-        "rap_name": "Farmco",
-        "spirit_animal": "Goose, andean",
-        "gender": "Male",
-        "city": "Shreveport"
-    },
-    {
-        "id": 7,
-        "title": "Dr",
-        "rap_name": "Di Loreto",
-        "spirit_animal": "Tawny eagle",
-        "gender": "Female",
-        "city": "Novoaleksandrovsk"
-    },
-    {
-        "id": 8,
-        "title": "Mrs",
-        "rap_name": "Sloan",
-        "spirit_animal": "Emerald green tree boa",
-        "gender": "Polygender",
-        "city": "Kh\u0101n Shaykh\u016bn"
-    },
-    {
-        "id": 9,
-        "title": "Mr",
-        "rap_name": "Milwaukee",
-        "spirit_animal": "Shelduck, european",
-        "gender": "Male",
-        "city": "Xuyong"
-    },
-    {
-        "id": 10,
-        "title": "Mrs",
-        "rap_name": "Reindahl",
-        "spirit_animal": "Sacred ibis",
-        "gender": "Genderfluid",
-        "city": "Longmenfan"
-    },
-    {
-        "id": 11,
-        "title": "Rev",
-        "rap_name": "Jana",
-        "spirit_animal": "Tortoise, galapagos",
-        "gender": "Agender",
-        "city": "Dashev"
-    },
-    {
-        "id": 12,
-        "title": "Ms",
-        "rap_name": "Crescent Oaks",
-        "spirit_animal": "Tern, white-winged",
-        "gender": "Male",
-        "city": "Boksitogorsk"
-    },
-    {
-        "id": 13,
-        "title": "Mrs",
-        "rap_name": "Summer Ridge",
-        "spirit_animal": "Great kiskadee",
-        "gender": "Polygender",
-        "city": "Tongyangdao"
-    },
-    {
-        "id": 14,
-        "title": "Honorable",
-        "rap_name": "Lawn",
-        "spirit_animal": "Robin, kalahari scrub",
-        "gender": "Agender",
-        "city": "Cartagena"
-    },
-    {
-        "id": 15,
-        "title": "Rev",
-        "rap_name": "Moulton",
-        "spirit_animal": "African pied wagtail",
-        "gender": "Male",
-        "city": "Cigintung"
-    },
-    {
-        "id": 16,
-        "title": "Ms",
-        "rap_name": "Hagan",
-        "spirit_animal": "Mudskipper (unidentified)",
-        "gender": "Bigender",
-        "city": "Pittsburgh"
-    },
-    {
-        "id": 17,
-        "title": "Rev",
-        "rap_name": "Dahle",
-        "spirit_animal": "Otter, brazilian",
-        "gender": "Genderfluid",
-        "city": "Buyende"
-    },
-    {
-        "id": 18,
-        "title": "Mr",
-        "rap_name": "Waubesa",
-        "spirit_animal": "Whale, baleen",
-        "gender": "Bigender",
-        "city": "Mawza\u2018"
-    },
-    {
-        "id": 19,
-        "title": "Rev",
-        "rap_name": "Mayer",
-        "spirit_animal": "Three-banded plover",
-        "gender": "Non-binary",
-        "city": "Starominskaya"
-    },
-    {
-        "id": 20,
-        "title": "Honorable",
-        "rap_name": "Ludington",
-        "spirit_animal": "Rock dove",
-        "gender": "Agender",
-        "city": "Xarag"
-    },
-    {
-        "id": 21,
-        "title": "Dr",
-        "rap_name": "Manufacturers",
-        "spirit_animal": "Gull, dusky",
-        "gender": "Bigender",
-        "city": "Jiangkou"
-    },
-    {
-        "id": 22,
-        "title": "Ms",
-        "rap_name": "Katie",
-        "spirit_animal": "Shrike, crimson-breasted",
-        "gender": "Genderqueer",
-        "city": "Ko\u0142biel"
-    },
-    {
-        "id": 23,
-        "title": "Mrs",
-        "rap_name": "Kinsman",
-        "spirit_animal": "Snow goose",
-        "gender": "Genderfluid",
-        "city": "Yinyang"
-    },
-    {
-        "id": 24,
-        "title": "Ms",
-        "rap_name": "Swallow",
-        "spirit_animal": "Little cormorant",
-        "gender": "Genderqueer",
-        "city": "Urbano Noris"
-    },
-    {
-        "id": 25,
-        "title": "Rev",
-        "rap_name": "Sugar",
-        "spirit_animal": "Leopard, indian",
-        "gender": "Bigender",
-        "city": "Sumberjo"
-    },
-    {
-        "id": 26,
-        "title": "Dr",
-        "rap_name": "Sugar",
-        "spirit_animal": "Snowy owl",
-        "gender": "Genderfluid",
-        "city": "Konakridee"
-    },
-    {
-        "id": 27,
-        "title": "Dr",
-        "rap_name": "Morningstar",
-        "spirit_animal": "Richardson's ground squirrel",
-        "gender": "Genderfluid",
-        "city": "Gobojango"
-    },
-    {
-        "id": 28,
-        "title": "Rev",
-        "rap_name": "Prairieview",
-        "spirit_animal": "Kingfisher, malachite",
-        "gender": "Polygender",
-        "city": "Camilo Aldao"
-    },
-    {
-        "id": 29,
-        "title": "Mr",
-        "rap_name": "Northwestern",
-        "spirit_animal": "Vine snake (unidentified)",
-        "gender": "Polygender",
-        "city": "Vila Ch\u00e3 do Monte"
-    },
-    {
-        "id": 30,
-        "title": "Rev",
-        "rap_name": "Springview",
-        "spirit_animal": "Bare-faced go away bird",
-        "gender": "Bigender",
-        "city": "Shanxi"
-    },
-    {
-        "id": 31,
-        "title": "Honorable",
-        "rap_name": "Drewry",
-        "spirit_animal": "Heron, striated",
-        "gender": "Genderfluid",
-        "city": "Cimanggu"
-    },
-    {
-        "id": 32,
-        "title": "Mrs",
-        "rap_name": "Lake View",
-        "spirit_animal": "Arctic fox",
-        "gender": "Bigender",
-        "city": "Baiqiao"
-    },
-    {
-        "id": 33,
-        "title": "Dr",
-        "rap_name": "Sutteridge",
-        "spirit_animal": "Sloth, two-toed tree",
-        "gender": "Bigender",
-        "city": "Evansville"
-    },
-    {
-        "id": 34,
-        "title": "Honorable",
-        "rap_name": "Mesta",
-        "spirit_animal": "Monkey, bleeding heart",
-        "gender": "Bigender",
-        "city": "Guadalupe"
-    },
-    {
-        "id": 35,
-        "title": "Ms",
-        "rap_name": "Westridge",
-        "spirit_animal": "Jackal, silver-backed",
-        "gender": "Genderfluid",
-        "city": "Kaczory"
-    },
-    {
-        "id": 36,
-        "title": "Mrs",
-        "rap_name": "Hauk",
-        "spirit_animal": "Striped hyena",
-        "gender": "Agender",
-        "city": "Roberval"
-    },
-    {
-        "id": 37,
-        "title": "Honorable",
-        "rap_name": "Anniversary",
-        "spirit_animal": "Monitor, water",
-        "gender": "Bigender",
-        "city": "Bekasi"
-    },
-    {
-        "id": 38,
-        "title": "Mrs",
-        "rap_name": "Blue Bill Park",
-        "spirit_animal": "Lesser double-collared sunbird",
-        "gender": "Bigender",
-        "city": "Banatski Dvor"
-    },
-    {
-        "id": 39,
-        "title": "Dr",
-        "rap_name": "Merchant",
-        "spirit_animal": "Goose, egyptian",
-        "gender": "Genderfluid",
-        "city": "Hvar"
-    },
-    {
-        "id": 40,
-        "title": "Dr",
-        "rap_name": "Corscot",
-        "spirit_animal": "Badger, honey",
-        "gender": "Genderfluid",
-        "city": "Junaynat Rasl\u0101n"
-    },
-    {
-        "id": 41,
-        "title": "Honorable",
-        "rap_name": "Nova",
-        "spirit_animal": "Nubian bee-eater",
-        "gender": "Non-binary",
-        "city": "Alamar"
-    },
-    {
-        "id": 42,
-        "title": "Rev",
-        "rap_name": "Fallview",
-        "spirit_animal": "Eagle, white-bellied sea",
-        "gender": "Genderfluid",
-        "city": "Krasae Sin"
-    },
-    {
-        "id": 43,
-        "title": "Rev",
-        "rap_name": "Dahle",
-        "spirit_animal": "Spotted hyena",
-        "gender": "Female",
-        "city": "Finsp\u00e5ng"
-    },
-    {
-        "id": 44,
-        "title": "Dr",
-        "rap_name": "Gina",
-        "spirit_animal": "Common raccoon",
-        "gender": "Agender",
-        "city": "Lagoa"
-    },
-    {
-        "id": 45,
-        "title": "Honorable",
-        "rap_name": "Reindahl",
-        "spirit_animal": "Stork, saddle-billed",
-        "gender": "Agender",
-        "city": "Stare Miasto"
-    },
-    {
-        "id": 46,
-        "title": "Ms",
-        "rap_name": "Melby",
-        "spirit_animal": "Cormorant, great",
-        "gender": "Genderfluid",
-        "city": "San Vicente"
-    },
-    {
-        "id": 47,
-        "title": "Dr",
-        "rap_name": "Hudson",
-        "spirit_animal": "Flamingo, roseat",
-        "gender": "Female",
-        "city": "Andahuaylas"
-    },
-    {
-        "id": 48,
-        "title": "Mr",
-        "rap_name": "Memorial",
-        "spirit_animal": "Lion, african",
-        "gender": "Polygender",
-        "city": "Cognac"
-    },
-    {
-        "id": 49,
-        "title": "Ms",
-        "rap_name": "Mosinee",
-        "spirit_animal": "Spotted wood sandpiper",
-        "gender": "Agender",
-        "city": "B\u00e9reldange"
-    },
-    {
-        "id": 50,
-        "title": "Dr",
-        "rap_name": "Everett",
-        "spirit_animal": "Screamer, crested",
-        "gender": "Non-binary",
-        "city": "Taposan"
-    },
-    {
-        "title": "test",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "test",
-        "city": "test",
-        "id": 51
-    }
-]
+[{
+  "id": 1,
+  "title": "Mrs",
+  "rap_name": "Walton",
+  "spirit_animal": "Brown and yellow marshbird",
+  "gender": "Genderqueer",
+  "record_id": 22
+}, {
+  "id": 2,
+  "title": "Mrs",
+  "rap_name": "Meadow Valley",
+  "spirit_animal": "Blacksmith plover",
+  "gender": "Genderqueer",
+  "record_id": 3
+}, {
+  "id": 3,
+  "title": "Honorable",
+  "rap_name": "Mandrake",
+  "spirit_animal": "Squirrel, african bush",
+  "gender": "Polygender",
+  "record_id": 21
+}, {
+  "id": 4,
+  "title": "Mrs",
+  "rap_name": "Straubel",
+  "spirit_animal": "Falcon, peregrine",
+  "gender": "Polygender",
+  "record_id": 23
+}, {
+  "id": 5,
+  "title": "Mrs",
+  "rap_name": "Park Meadow",
+  "spirit_animal": "Blue waxbill",
+  "gender": "Non-binary",
+  "record_id": 13
+}, {
+  "id": 6,
+  "title": "Mrs",
+  "rap_name": "Ramsey",
+  "spirit_animal": "Red-tailed hawk",
+  "gender": "Genderfluid",
+  "record_id": 8
+}, {
+  "id": 7,
+  "title": "Mrs",
+  "rap_name": "Doe Crossing",
+  "spirit_animal": "Cockatoo, red-tailed",
+  "gender": "Genderqueer",
+  "record_id": 13
+}, {
+  "id": 8,
+  "title": "Mr",
+  "rap_name": "Ridge Oak",
+  "spirit_animal": "Leopard",
+  "gender": "Genderfluid",
+  "record_id": 21
+}, {
+  "id": 9,
+  "title": "Ms",
+  "rap_name": "Scott",
+  "spirit_animal": "Red-capped cardinal",
+  "gender": "Agender",
+  "record_id": 10
+}, {
+  "id": 10,
+  "title": "Mrs",
+  "rap_name": "Linden",
+  "spirit_animal": "Old world fruit bat (unidentified)",
+  "gender": "Non-binary",
+  "record_id": 9
+}, {
+  "id": 11,
+  "title": "Ms",
+  "rap_name": "New Castle",
+  "spirit_animal": "Indian giant squirrel",
+  "gender": "Male",
+  "record_id": 25
+}, {
+  "id": 12,
+  "title": "Honorable",
+  "rap_name": "Declaration",
+  "spirit_animal": "Red-billed hornbill",
+  "gender": "Male",
+  "record_id": 4
+}, {
+  "id": 13,
+  "title": "Honorable",
+  "rap_name": "Randy",
+  "spirit_animal": "Whale, killer",
+  "gender": "Female",
+  "record_id": 17
+}, {
+  "id": 14,
+  "title": "Mr",
+  "rap_name": "Sutteridge",
+  "spirit_animal": "Owl, australian masked",
+  "gender": "Genderfluid",
+  "record_id": 14
+}, {
+  "id": 15,
+  "title": "Mr",
+  "rap_name": "Utah",
+  "spirit_animal": "Asian false vampire bat",
+  "gender": "Polygender",
+  "record_id": 12
+}, {
+  "id": 16,
+  "title": "Rev",
+  "rap_name": "Carpenter",
+  "spirit_animal": "Openbill stork",
+  "gender": "Genderqueer",
+  "record_id": 10
+}, {
+  "id": 17,
+  "title": "Rev",
+  "rap_name": "Everett",
+  "spirit_animal": "Madagascar hawk owl",
+  "gender": "Polygender",
+  "record_id": 13
+}, {
+  "id": 18,
+  "title": "Ms",
+  "rap_name": "Vera",
+  "spirit_animal": "Kangaroo, black-faced",
+  "gender": "Genderfluid",
+  "record_id": 5
+}, {
+  "id": 19,
+  "title": "Dr",
+  "rap_name": "Pond",
+  "spirit_animal": "Ant (unidentified)",
+  "gender": "Polygender",
+  "record_id": 20
+}, {
+  "id": 20,
+  "title": "Honorable",
+  "rap_name": "Manufacturers",
+  "spirit_animal": "Gnu, brindled",
+  "gender": "Polygender",
+  "record_id": 16
+}, {
+  "id": 21,
+  "title": "Rev",
+  "rap_name": "Lyons",
+  "spirit_animal": "Otter, small-clawed",
+  "gender": "Male",
+  "record_id": 13
+}, {
+  "id": 22,
+  "title": "Mr",
+  "rap_name": "Cardinal",
+  "spirit_animal": "Raccoon, crab-eating",
+  "gender": "Bigender",
+  "record_id": 23
+}, {
+  "id": 23,
+  "title": "Rev",
+  "rap_name": "Linden",
+  "spirit_animal": "Steller sea lion",
+  "gender": "Genderqueer",
+  "record_id": 8
+}, {
+  "id": 24,
+  "title": "Mrs",
+  "rap_name": "Carberry",
+  "spirit_animal": "Dusky gull",
+  "gender": "Agender",
+  "record_id": 10
+}, {
+  "id": 25,
+  "title": "Mr",
+  "rap_name": "Waubesa",
+  "spirit_animal": "Cape starling",
+  "gender": "Bigender",
+  "record_id": 19
+}]
