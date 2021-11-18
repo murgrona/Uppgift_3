@@ -23,9 +23,10 @@ if ($requestMethod === "DELETE") {
     }
     $id = $requestData["id"];
 
+    // Går igenom idn och tar bort
     foreach($recordsDecode as $index => $user){
     if($user["id"] === $id) {
-        $found = true;
+        //$found = true;
         array_splice($recordsDecode, $index, 1);
         break;
         }
