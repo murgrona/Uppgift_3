@@ -8,7 +8,7 @@ $data = file_get_contents("php://input");
 $requestData = json_decode($data, true);
 
 if($requestMethod === "POST") {
-    if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["city"])) {
+    if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_id"])) {
         header("Content-Type: application/json");
         http_response_code(400);
 
@@ -19,16 +19,14 @@ if($requestMethod === "POST") {
         exit();
     }
 
-    //$getUsers = file_get_contents("../rap_name.json");
     $rapNames = loadJson("../rap_name.json");
-    $
 
     $newRapper = [
         "title" => $requestData["title"],
         "rap_name" => $requestData["rap_name"],
         "spirit_animal" => $requestData["spirit_animal"],
         "gender" => $requestData["gender"],
-        "city" => $requestData["city"]
+        "record_id" => [$requestData["record_id"]]
     ];
 
     $highestId = 0; 
@@ -42,18 +40,36 @@ if($requestMethod === "POST") {
     $newRapper["id"] = $highestId + 1;
    
     array_push($rapNames, $newRapper);
+
+
+    $rapperRecordID = $requestData["record_id"];
+
+    $recordJson = loadJson("../record_company.json");
+
+    $foundUser = null;
+    $ownerOfRapper = null;
+
+    foreach($recordJson as $record) {
+        $ownerOfRapper = $record["owner_of_rapper"];
+            if($rapperRecordID == $record["id"]) { 
+                $foundUser = $newRapper["id"];
+            }
+            //array_push($ownerOfRapper, $foundUser); 
+            //var_dump($ownerOfRapper); 
+        }
+       
+    }
+   
+   
    
 
-    file_put_contents(
-    "../rap_name.json",
-    json_encode($rapNames, JSON_PRETTY_PRINT)
-    );
-   
-    header("Content-Type: application/json");
-    http_response_code(201);
-    $json = json_encode($newRapper);
-    echo $json;
-    exit();
-}
+    saveJson("../record_company.json", $foundUser);
+
+        
+    saveJson("../rap_name.json", $rapNames);
+    sendJson($newRapper, 200);
+
+    //sendJSON här istället
+
 
 ?>
