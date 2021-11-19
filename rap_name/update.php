@@ -40,7 +40,7 @@ if($requestMethod == "PATCH") {
                 }else {
                     sendJson([
                          "code" => 1,
-                         "Message" => "All fields need to be complet, add spirit animal"], 400);
+                         "Message" => "All fields need to be complete, add spirit animal"], 400);
                  }
                 if(isset($requestData["gender"])) {
                     $rapper["gender"] = $requestData["gender"];
@@ -63,6 +63,9 @@ if($requestMethod == "PATCH") {
                 break;
             }
 
+        }
+        if ($found == false){
+            sendJson(["message" => "ID not found."], 404);
         }
     
     saveJson("../rap_name.json", $rappers);
