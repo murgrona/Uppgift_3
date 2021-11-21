@@ -49,13 +49,7 @@ if($requestMethod == "PATCH") {
                          "code" => 1,
                          "Message" => "All fields need to be complete, add year"], 400);
                  }
-                if(isset($requestData["owner_of_rapper"])) {
-                   $record["owner_of_rapper"] = [$requestData["owner_of_rapper"]];
-                }else {
-                    sendJson([
-                         "code" => 1,
-                         "Message" => "All fields need to be complete, add owner of rapper"], 400);
-                 }
+    
                 
 
                 $records[$index] = $record;
