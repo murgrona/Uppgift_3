@@ -28,6 +28,13 @@
         "year": 1994
     },
     {
+        "id": 5,
+        "record_company": "Hettinger-Wilkinson",
+        "country": "Indonesia",
+        "email": "bchild3@alibaba.com",
+        "year": 1994
+    },
+    {
         "id": 6,
         "record_company": "Stehr, Zieme and Bechtelar",
         "country": "Japan",
@@ -102,6 +109,13 @@
         "record_company": "Carter-Baumbach",
         "country": "Suriname",
         "email": "hburdinf@squarespace.com",
+        "year": 2010
+    },
+    {
+        "id": 17,
+        "record_company": "Carter",
+        "country": "China",
+        "email": "yasMusic@squarespace.com",
         "year": 2010
     },
     {

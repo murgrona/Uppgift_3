@@ -27,6 +27,7 @@ if ($requestMethod === "DELETE") {
     }
 
     $id = $requestData["id"];
+   
     $found = false;
     $rapNames = loadJson("../rap_name.json");
     // Går igenom record idn och tar bort
@@ -37,10 +38,11 @@ if ($requestMethod === "DELETE") {
         break;
         }
     }
-    foreach($rapNames as $index => $rapName) {
-        if($rapName["id"] === $records) {
+   foreach($rapNames as $index => $rapName) {
+       $rapperID = $rapName["record_company"];
+        if($rapperID === $id) {
             $found = true;
-            array_splice($rapName, $index, 1);
+            array_splice($rapNames, $index, 1);
             break;
         }
     }
@@ -56,7 +58,9 @@ if ($requestMethod === "DELETE") {
 
     // Uppdaterar filen
     saveJson("../record_company.json", $records);
-    saveJson("../rap_name", $rapName);
-    sendJson(["id" => $id]);
+    saveJson("../rap_name.json", $rapNames);
+    sendJson([
+        "code" => 1,
+        "Message" => "Sucessfully deleted both record company with id = {$id} and rappers with same id" ], 200);
 };
 ?>
