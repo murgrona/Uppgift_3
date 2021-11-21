@@ -15,9 +15,10 @@ if($requestMethod === "PUT") {
 }
 
 if($requestMethod === "POST") {
-    
+ 
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
     if(!isset($requestData["record_company"]) || !isset($requestData["country"]) || !isset($requestData["email"]) || !isset($requestData["year"])) {
+        var_dump(isset($requestData["record_company"]));
         sendJson([
             "code" => 1,
             "Message" => "All fields need to be complete"], 400);
@@ -30,10 +31,9 @@ if($requestMethod === "POST") {
         ], 400);
         exit();
     }
-    
+ 
     //annars hämta JSON och skapa en ny användare med de värden vi lägger in 
-    $rapNames = loadJson("../record_company.json");
-    //kolla ifall record_company innehåller "
+    $recordCompanies = loadJson("../record_company.json");
 
     $newRecord = [
         "record_company" => $requestData["record_company"],
@@ -44,34 +44,28 @@ if($requestMethod === "POST") {
     //få ut nytt ID
     $highestId = 0; 
         
-    foreach ($rapNames as $rapper) {
-        if ($rapper["id"] > $highestId) {
-                $highestId = $rapper["id"];
+    foreach ($recordCompanies as $recordCompany) {
+        if ($recordCompany["id"] > $highestId) {
+                $highestId = $recordCompany["id"];
         }
     }
 
-    $newRapper["id"] = $highestId + 1;
-
-    $recordCompanies = loadJson("../record_company.json");//hämta record_company JSON
-
-    $id = $newRapper["record_company"]; // är rätt
-    $found = false;
-
-    foreach($recordCompanies as $index => $recordCompany) { //kontrollera så att det finns ett id-skivbolag som rapparen kan tillhöra
-        $recordIds = $recordCompany["id"];
-        if($recordIds === $id) {
-            $found = true;
-            var_dump($found);
-            array_push($rapNames, $newRapper);
-        }
-    }if($found == false) {
+    $email = strlen($newRecord["email"]);
+    $find = strpos($email, '@');
+    if($find == false) {
         sendJson([
-            "code" => 4,
-            "Message" => "This company ID does not exist, please try again"], 400);
-            exit();
+            "code" => 2,
+            "Message" => "Email needs to contain @"
+        ], 400);
+        exit();
     }
-    saveJson("../rap_name.json", $rapNames);
-    sendJson($newRapper, 200);  
+    
+
+    $newRecord["id"] = $highestId + 1;
+    array_push($recordCompanies, $newRecord);
+
+    saveJson("../record_company.json", $recordCompanies);
+    sendJson($newRecord, 200);  
 
 }
 

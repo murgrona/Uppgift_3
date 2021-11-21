@@ -55,21 +55,22 @@ if($requestMethod === "POST") {
 
     $recordCompanies = loadJson("../record_company.json");//hämta record_company JSON
 
-    $id = $newRapper["record_company"]; // är rätt
+    $id = $newRapper["record_company"]; 
     $found = false;
 
     foreach($recordCompanies as $index => $recordCompany) { //kontrollera så att det finns ett id-skivbolag som rapparen kan tillhöra
         $recordIds = $recordCompany["id"];
+
         if($recordIds === $id) {
             $found = true;
             var_dump($found);
             array_push($rapNames, $newRapper);
         }
-    }if($found == false) {
-        sendJson([
-            "code" => 4,
-            "Message" => "This company ID does not exist, please try again"], 400);
-            exit();
+        }if($found == false) {
+            sendJson([
+                "code" => 4,
+                "Message" => "This company ID does not exist, please try again"], 400);
+                exit();
     }
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
