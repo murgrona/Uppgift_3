@@ -14,7 +14,7 @@ if($requestMethod === "PUT") {
         "Message" => "Method not allowed"], 405);
 }
 
-if($requestMethod === "POST") {
+if($requestMethod === "POST" && isset($_POST)) {
     
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
     if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_id"])) {
