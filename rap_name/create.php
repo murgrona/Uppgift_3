@@ -74,15 +74,5 @@ if($requestMethod === "POST") {
     }
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
-
-   
-
-    /*if(str_contains($requestData["record_id"], '""')) {
-    sendJson([
-        "code" => 2,
-        "Message" => "Cannot contain '' ",
-    ], 400);
-    exit();
-}*/
 }
 ?>

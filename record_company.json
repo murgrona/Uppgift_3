@@ -208,5 +208,19 @@
         "country": "China",
         "email": "drobbingst@constantcontact.com",
         "year": 1987
+    },
+    {
+        "record_company": "patch-Daugherty",
+        "country": "patch",
+        "email": "patch@mlb.com",
+        "year": 1996,
+        "id": 31
+    },
+    {
+        "record_company": "test-test",
+        "country": "test",
+        "email": "testm@lb.com",
+        "year": "1996",
+        "id": 32
     }
 ]

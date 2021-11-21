@@ -8,13 +8,12 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 $data = file_get_contents("php://input");
 $requestData = json_decode($data, true);
 
-$rappers = loadJson("../record_company.json");
+$records = loadJson("../record_company.json");
 
 $id = $requestData["id"];
 
 $found = false;
 $foundRecord = null;
-
 
 if($requestMethod == "PATCH") {
         foreach($records as $index => $record){
@@ -58,6 +57,30 @@ if($requestMethod == "PATCH") {
             }
 
         }
+    if ($found == false){
+        sendJson(["message" => "ID not found."], 404);
+    }
+
+    $email = $requestData["email"];
+    $findChar = strpos($email, '@');
+   
+    if($findChar == false) {
+        sendJson([
+            "code" => 2,
+            "Message" => "Email needs to contain @"
+        ], 400);
+        exit();
+    }
+    
+    //kontrollera så att år är siffror
+    $year = $requestData["year"];
+    if(!is_numeric($year)){
+        sendJson([
+            "code" => 2,
+            "Message" => "Year needs to be in numbers"
+        ], 400);
+        exit();
+    }
     
     saveJson("../record_company.json", $records);
     sendJson($foundRecord);

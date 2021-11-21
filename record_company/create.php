@@ -32,7 +32,7 @@ if($requestMethod === "POST") {
         exit();
     }
  
-    //annars hämta JSON och skapa en ny användare med de värden vi lägger in 
+    //hämta JSON och skapa en nya skivbolag med de värden vi lägger in 
     $recordCompanies = loadJson("../record_company.json");
 
     $newRecord = [
@@ -50,8 +50,10 @@ if($requestMethod === "POST") {
         }
     }
 
-    $email = strlen($newRecord["email"]);
+    //kontrollera så att email har @ 
+    $email = $newRecord["email"];
     $find = strpos($email, '@');
+   
     if($find == false) {
         sendJson([
             "code" => 2,
@@ -60,6 +62,15 @@ if($requestMethod === "POST") {
         exit();
     }
     
+    //kontrollera så att år är siffror
+    $year = $newRecord["year"];
+    if(!is_numeric($year)){
+        sendJson([
+            "code" => 2,
+            "Message" => "Year needs to be in numbers"
+        ], 400);
+        exit();
+    }
 
     $newRecord["id"] = $highestId + 1;
     array_push($recordCompanies, $newRecord);
