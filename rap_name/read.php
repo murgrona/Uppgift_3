@@ -12,27 +12,52 @@ if ($requestMethod === "GET") {
     if (isset($_GET["titles"])) {
         $rapTitle = explode(",",$_GET["titles"]);
         $titleArray = [];
+        $found = true;
         foreach ($rappers as $rapT) {
             if (in_array($rapT["title"], $rapTitle)) {
                 $titleArray[] = $rapT;
             }
         }
         sendJson($titleArray);
+        if (!isset($_GET["titles"])) {
+            sendJson(
+                [
+                    "code" => 2,
+                    "message" => "Write something"
+                ],
+                404
+            );
+        }
     }
+    
+    
+
+    $found = false;
     //Hämta begränsat antal rappare
     if (isset($_GET["limit"])) {
+        $found = true;
         $limit = $_GET["limit"];
         $slicedRapper = array_slice($rappers, 0, $limit);
         sendJson($slicedRapper);
     }
     // Hämta rappare beroende på id
     if (isset($_GET["ids"])) {
+        $found = true;
         $ids = explode(",",$_GET["ids"]);
         $rappersId = [];
         foreach ($rappers as $rapper) {
             if (in_array($rapper["id"], $ids)) {
                 $rappersId[] = $rapper;
             }
+        }
+        if ($found === false) {
+            sendJson(
+                [
+                    "code" => 2,
+                    "message" => "Does not exist"
+                ],
+                404
+            );
         }
         sendJson($rappersId);
     }
