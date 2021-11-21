@@ -18,16 +18,6 @@ if ($requestMethod === "GET") {
                 $titleArray[] = $rapT;
             }
         }
-        sendJson($titleArray);
-        if (!isset($_GET["titles"])) {
-            sendJson(
-                [
-                    "code" => 2,
-                    "message" => "Write something"
-                ],
-                404
-            );
-        }
     }
     
     
