@@ -1,5 +1,13 @@
 [
     {
+        "id": 1,
+        "title": "Mrs",
+        "rap_name": "Lakewood",
+        "spirit_animal": "Burmese black mountain tortoise",
+        "gender": "Female",
+        "record_company": 17
+    },
+    {
         "id": 3,
         "title": "Mrs",
         "rap_name": "Bunker Hill",
@@ -222,101 +230,5 @@
         "spirit_animal": "Otter, north american river",
         "gender": "Agender",
         "record_company": 3
-    },
-    {
-        "title": "ds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 31
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 32
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 50,
-        "id": 33
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 34
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 50,
-        "id": 35
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 36
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 50,
-        "id": 37
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 50,
-        "id": 38
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 24,
-        "id": 39
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 24,
-        "id": 40
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 41
-    },
-    {
-        "title": "dds",
-        "rap_name": "test Oaks",
-        "spirit_animal": "test, white-winged",
-        "gender": "trrr",
-        "record_company": 25,
-        "id": 42
     }
 ]
