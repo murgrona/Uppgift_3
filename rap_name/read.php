@@ -18,6 +18,7 @@ if ($requestMethod === "GET") {
                 $titleArray[] = $rapT;
             }
         }
+        sendJson($titleArray);
     }
     
     

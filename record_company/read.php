@@ -9,6 +9,17 @@ $records = loadJson("../record_company.json");
 
 
 if ($requestMethod === "GET") {
+    if (isset($_GET["country"])) {
+        $countryRec = explode(",",$_GET["country"]);
+        $CountryArray = [];
+        
+        foreach ($records as $recC) {
+            if (in_array($recC["country"], $countryRec)) {
+                $CountryArray[] = $recC;
+            }
+        }
+        sendJson($CountryArray);
+    }
     //Hämta begränsat antal skivbolag
     if (isset($_GET["limit"])) {
         $limit = $_GET["limit"];
