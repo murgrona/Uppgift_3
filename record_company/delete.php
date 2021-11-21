@@ -8,7 +8,6 @@ $requestMethod = $_SERVER["REQUEST_METHOD"];
 $records = loadJson("../record_company.json");
 
 // Våran Json data från vilken fil
-$records = loadJson("../record_company.json");
 $rappers = loadJson("../rap_name.json");
 
 // Hämta Json data
@@ -29,13 +28,20 @@ if ($requestMethod === "DELETE") {
 
     $id = $requestData["id"];
     $found = false;
-    
-    // Går igenom idn och tar bort
+    $rapNames = loadJson("../rap_name.json");
+    // Går igenom record idn och tar bort
     foreach($records as $index => $record){
     if($record["id"] === $id) {
         $found = true;
         array_splice($records, $index, 1);
         break;
+        }
+    }
+    foreach($rapNames as $index => $rapName) {
+        if($rapName["id"] === $records) {
+            $found = true;
+            array_splice($rapName, $index, 1);
+            break;
         }
     }
     if ($found === false) {
@@ -50,6 +56,7 @@ if ($requestMethod === "DELETE") {
 
     // Uppdaterar filen
     saveJson("../record_company.json", $records);
+    saveJson("../rap_name", $rapName);
     sendJson(["id" => $id]);
 };
 ?>

@@ -23,7 +23,7 @@ if ($requestMethod === "DELETE") {
         );
     }
     $id = $requestData["id"];
-    $recordCompanies = loadJson("../record_company.json");//hämta record_company JSON
+    
     $found = false;
     // Går igenom idn och tar bort
     foreach($rappers as $index => $rapper){
@@ -32,19 +32,6 @@ if ($requestMethod === "DELETE") {
         array_splice($rappers, $index, 1);
         break;
         }
-    }
-    foreach($recordCompanies as $index => $recordCompany) { //kontrollera så att det finns ett id-skivbolag som rapparen kan tillhöra
-        $recordIds = $recordCompany["id"];
-        if($recordIds === $id) {
-            $found = true;
-            var_dump($found);
-            array_splice($recordIds, $index, 1);
-        }
-    }if($found == false) {
-        sendJson([
-            "code" => 4,
-            "Message" => "This company ID does not exist, please try again"], 400);
-            exit();
     }
     if ($found === false) {
         sendJson(
@@ -56,7 +43,6 @@ if ($requestMethod === "DELETE") {
         );
     }
     // Uppdaterar filen
-    saveJson("../record_company.json", $recordIds);
     saveJson("../rap_name.json", $rappers);
     sendJson(["id" => $id]);
 };

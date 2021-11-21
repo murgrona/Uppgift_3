@@ -28,13 +28,6 @@
         "year": 1994
     },
     {
-        "id": 5,
-        "record_company": "Rau, Wyman and Beer",
-        "country": "Philippines",
-        "email": "gstickles4@uiuc.edu",
-        "year": 1992
-    },
-    {
         "id": 6,
         "record_company": "Stehr, Zieme and Bechtelar",
         "country": "Japan",
@@ -110,13 +103,6 @@
         "country": "Suriname",
         "email": "hburdinf@squarespace.com",
         "year": 2010
-    },
-    {
-        "id": 17,
-        "record_company": "Bartell-Mraz",
-        "country": "Indonesia",
-        "email": "dbarendtseng@csmonitor.com",
-        "year": 1998
     },
     {
         "id": 18,
