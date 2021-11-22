@@ -29,8 +29,8 @@ if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
         sendJson([
             "code" => 3,
-            "Message" => "missing id"],
-            404
+            "Message" => "You need to use id: number"],
+            400
         );
         exit();
     }

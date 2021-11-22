@@ -208,5 +208,12 @@
         "country": "China",
         "email": "drobbingst@constantcontact.com",
         "year": 1987
+    },
+    {
+        "id": 32,
+        "record_company": "Dickens, Quigley and Howe",
+        "country": "China",
+        "email": "drobbingst@constantcontact.com",
+        "year": 1987
     }
 ]
