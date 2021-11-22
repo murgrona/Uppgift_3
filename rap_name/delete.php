@@ -46,6 +46,7 @@ if ($requestMethod === "DELETE") {
         break;
         }
     }
+    //om Användaren skriver ett id som inte existerar
     if ($found === false) {
         sendJson(
             [
