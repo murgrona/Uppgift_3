@@ -11,7 +11,10 @@ $requestData = json_decode($data, true);
 if($requestMethod === "PUT") {
     sendJson([
         "code" => 1,
-        "Message" => "Method not allowed"], 405);
+        "Message" => "Method not allowed"],
+        405
+    );
+    exit();
 }
 
 $contentType = $_SERVER["CONTENT_TYPE"];
@@ -24,6 +27,7 @@ if ($contentType !== "application/json") {
         ],
         400
     );
+    exit();
 }
 
 if($requestMethod === "POST" && isset($_POST)) {
@@ -33,14 +37,15 @@ if($requestMethod === "POST" && isset($_POST)) {
         var_dump(isset($requestData["record_company"]));
         sendJson([
             "code" => 3,
-            "Message" => "All fields need to be complete"], 400);
-            exit();
+            "Message" => "All fields need to be complete"],
+            400);
+        exit();
     }
     if (strlen($requestData["record_company"]) < 2 || strlen($requestData["country"]) < 2|| strlen($requestData["email"]) < 2 || strlen($requestData["year"]) < 2) {
         sendJson([
             "code" => 3,
-            "Message" => "Field needs to contain at least 2 characters",
-        ], 400);
+            "Message" => "Field needs to contain at least 2 characters"],
+            400);
         exit();
     }
  

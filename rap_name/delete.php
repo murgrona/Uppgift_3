@@ -27,12 +27,10 @@ if ($contentType !== "application/json") {
 //Radera baserat på id
 if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
-        sendJson(
-            [
+        sendJson([
             "code" => 3,
-            "message" => "missing id"
-            ],
-            400
+            "message" => "missing id"],
+            404
         );
     }
     $id = $requestData["id"];
@@ -58,6 +56,6 @@ if ($requestMethod === "DELETE") {
     // Uppdaterar filen
     saveJson("../rap_name.json", $rappers);
     sendJson([
-        "Message" => "sucessfully deleted rapper with id = {$id}"]);
+        "Message" => "sucessfully deleted rapper with id = {$id}"], 200);
 };
 ?>

@@ -35,7 +35,7 @@ if ($requestMethod === "DELETE") {
             "code" => 3,
             "message" => "missing id"
             ],
-            400
+            404
         );
     }
 
@@ -63,7 +63,7 @@ if ($requestMethod === "DELETE") {
         sendJson(
             [
                 "code" => 4,
-                "message" => "The record company does not exist"
+                "message" => "The record company id does not exist"
             ],
             404 
         );

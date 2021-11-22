@@ -39,13 +39,12 @@ if ($requestMethod === "GET") {
             }
         }
         if($found === false) {
-            sendJson(
-            [
+            sendJson([
                 "code" => 4,
-                "message" => "Company does not exist"
-            ],
+                "message" => "Company does not exist"],
             404
-        );
+            );
+            exit();
         }
         sendJson($recordId);
         

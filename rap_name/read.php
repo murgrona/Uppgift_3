@@ -54,19 +54,20 @@ if ($requestMethod === "GET") {
                         $rapperWithRecordCompany = str_replace($rapperRecordID, $recordCompany["record_company"], $rapper);
                         
                         sendJson([
-                            $rapperWithRecordCompany
-                        ],200);
-                    }
-                 
-                }
-            
-
+                            $rapperWithRecordCompany],
+                            200
+                        );
+                        exit();
+                    } 
+                } 
             }
-            //om användaren anger ett ID som inte finns så får de upp följande felmeddelande
+        //om användaren anger ett ID som inte finns så får de upp följande felmeddelande
         }if($includes !== $rapper["record_company"]) {
             sendJson([
                 "code" => 4,
-                "Message" => "ID does not exist"], 400);
+                "Message" => "ID does not exist"],
+                404
+            );
             exit();
         }
     }
@@ -85,10 +86,11 @@ if ($requestMethod === "GET") {
             sendJson(
                 [
                     "code" => 4,
-                    "message" => "Does not exist"
+                    "message" => "ID does not exist"
                 ],
                 404
             );
+            exit();
         }
         sendJson($rappersId);
     }

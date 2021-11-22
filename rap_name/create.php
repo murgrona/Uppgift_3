@@ -16,7 +16,10 @@ $requestData = json_decode($data, true);
 if($requestMethod === "PUT") {
     sendJson([
         "code" => 1,
-        "Message" => "Method not allowed"], 405);
+        "Message" => "Method not allowed"],
+        405
+    );
+    exit();
 }
 
 $contentType = $_SERVER["CONTENT_TYPE"];
@@ -25,10 +28,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 if ($contentType !== "application/json") {
     sendJson([ 
         "code" => 2,
-        "message" => "The API only accepts JSON"
-        ],
+        "message" => "The API only accepts JSON"],
         400
     );
+    exit();
 }
 
 if($requestMethod === "POST" && isset($_POST)) {
@@ -84,8 +87,10 @@ if($requestMethod === "POST" && isset($_POST)) {
         }if($found == false) {
             sendJson([
                 "code" => 4,
-                "Message" => "This company ID does not exist, please try again"], 400);
-                exit(); 
+                "Message" => "This company ID does not exist, please try again"],
+                404
+            );
+            exit(); 
         }
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
