@@ -29,18 +29,27 @@ if ($requestMethod === "GET") {
     $found = false;
     // Hämta skivbolag beroende på id
     if (isset($_GET["ids"])) {
-        $found = true;
-        var_dump($found);
         $ids = explode(",",$_GET["ids"]);
         $recordId = [];
 
         foreach ($records as $record) {
             if (in_array($record["id"], $ids)) {
-                $recordId[] = $record;
-                sendJson($recordId);
+                $found = true;
+                $recordId[] = $record; 
             }
         }
-        if($_GET["ids"] !== $record["id"]) {
+        if($found === false) {
+            sendJson(
+            [
+                "code" => 2,
+                "message" => "Company does not exist"
+            ],
+            404
+        );
+        }
+        sendJson($recordId);
+        
+        /*if($_GET["ids"] !== $record["id"]) {
             $found = false;
             sendJson(
                 [
@@ -49,7 +58,7 @@ if ($requestMethod === "GET") {
                 ],
                 404
             );
-        }  
+        }  */
     }
     // Hämta alla skivbolag
     sendJson($records);
