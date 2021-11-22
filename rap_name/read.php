@@ -17,6 +17,11 @@ if ($requestMethod === "GET") {
                 $titleArray[] = $rapT;
             }
         }
+        if(isset($_GET["limit"]) && isset($_GET["titles"])) {
+            $limit = $_GET["limit"];
+            $slicedRapperTitle = array_slice($titleArray, 0, $limit);
+            sendJson($slicedRapperTitle);
+        }
         sendJson($titleArray);
     }
     //Hämta begränsat antal rappare
@@ -25,6 +30,38 @@ if ($requestMethod === "GET") {
         $slicedRapper = array_slice($rappers, 0, $limit);
         sendJson($slicedRapper);
     }
+    //Får fram rapparens företag beroende på vilket id som anges i includes URL
+    if (isset($_GET["includes"])) {
+        $includes = $_GET["includes"];
+        foreach ($rappers as $rapper) {
+            if($includes == $rapper["record_company"]){
+                $rapperRecordID = $rapper["record_company"];
+                $recordCompanies = loadJson("../record_company.json");
+                $found = false;
+                //loopar igenom skivbolag och jämför angett id för att få fram rätt skivbolag
+                foreach($recordCompanies as $recordCompany) {
+                    if($recordCompany["id"] === $rapperRecordID) {  
+                        $found = true;
+                        $rapperWithRecordCompany = str_replace($rapperRecordID, $recordCompany["record_company"], $rapper);
+                        
+                        sendJson([
+                            $rapperWithRecordCompany
+                        ],200);
+                    }
+                 
+                }
+            
+
+            }
+            //om användaren anger ett ID som inte finns så får de upp följande felmeddelande
+        }if($includes !== $rapper["record_company"]) {
+            sendJson([
+                "code" => 4,
+                "Message" => "ID does not exist"], 400);
+            exit();
+        }
+    }
+ 
     // Hämta rappare beroende på id
     if (isset($_GET["ids"])) {
         $ids = explode(",",$_GET["ids"]);
@@ -36,7 +73,7 @@ if ($requestMethod === "GET") {
         }
         sendJson($rappersId);
     }
-    // Hämta alla rappare
+   
     sendJson($rappers);
 }
 
@@ -49,4 +86,5 @@ if ($contentType !== "application/json") {
         400
     );
 }
+
 ?>
