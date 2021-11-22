@@ -15,6 +15,17 @@ $id = $requestData["id"];
 $found = false;
 $foundRecord = null;
 
+$contentType = $_SERVER["CONTENT_TYPE"];
+
+// Checka contentType
+if ($contentType !== "application/json") {
+    sendJson(
+        ["message" => "The API only accepts JSON"],
+        400
+    );
+}
+
+
 if($requestMethod == "PATCH") {
         foreach($records as $index => $record){
             if($record["id"] === $id){

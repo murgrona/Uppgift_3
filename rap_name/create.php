@@ -83,14 +83,5 @@ if($requestMethod === "POST" && isset($_POST)) {
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
 
-   $contentType = $_SERVER["CONTENT_TYPE"];
-
-    // Checka contentType
-    if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
-        400
-    );
-    }
 }
 ?>

@@ -63,14 +63,4 @@ if ($requestMethod === "GET") {
     // Hämta alla skivbolag
     sendJson($records);
 }
-
-$contentType = $_SERVER["CONTENT_TYPE"];
-
-// Checka contentType
-if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
-        400
-    );
-}
 ?>

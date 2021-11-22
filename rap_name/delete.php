@@ -11,6 +11,17 @@ $rappers = loadJson("../rap_name.json");
 $data = file_get_contents("php://input");
 $requestData = json_decode($data, true);
 
+
+$contentType = $_SERVER["CONTENT_TYPE"];
+
+// Checka contentType
+if ($contentType !== "application/json") {
+    sendJson(
+        ["message" => "The API only accepts JSON"],
+        400
+    );
+}
+
 //Radera baserat på id
 if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
