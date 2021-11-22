@@ -27,5 +27,25 @@ function saveJson ($filename, $data) {
     }
 }
 
+function arrayInsert($array, $position, $insertArray){
+    $ret = [];
+
+    if ($position == count($array)) {
+        $ret = $array + $insertArray;
+    }
+    else {
+        $i = 0;
+        foreach ($array as $key => $value) {
+            if ($position == $i++) {
+                $ret += $insertArray;
+            }
+
+            $ret[$key] = $value;
+        }
+    }
+
+    return $ret;
+}
+
 
 ?>

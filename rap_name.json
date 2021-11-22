@@ -229,6 +229,22 @@
         "rap_name": "Fisk",
         "spirit_animal": "Otter, north american river",
         "gender": "Agender",
-        "record_company": 3
+        "record_company": 32
+    },
+    {
+        "id": 30,
+        "title": "Dr",
+        "rap_name": "Fisk",
+        "spirit_animal": "Otter, north american river",
+        "gender": "Agender",
+        "record_company": 31
+    },
+    {
+        "id": 30,
+        "title": "Dr",
+        "rap_name": "Fisk",
+        "spirit_animal": "Otter, north american river",
+        "gender": "Agender",
+        "record_company": 32
     }
 ]

@@ -50,14 +50,20 @@ if ($requestMethod === "DELETE") {
         break;
         }
     }
-   foreach($rapNames as $index => $rapName) {
-       $rapperID = $rapName["record_company"];
-        if($rapperID === $id) {
-            $found = true;
-            array_splice($rapNames, $index, 1);
-            break;
+
+    $length = count($rapNames);
+
+    for ($x = 0; $x <= $length; $x++) {
+        foreach ($rapNames as $index => $rapName) {
+            $rapperID = $rapName["record_company"];
+           if($rapperID == $id) {
+               //Raderar bort dem
+                array_splice($rapNames, $index, 1);
+                break;
+            } 
         }
     }
+   
     if ($found === false) {
         sendJson([
             "code" => 4,
