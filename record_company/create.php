@@ -14,6 +14,16 @@ if($requestMethod === "PUT") {
         "Message" => "Method not allowed"], 405);
 }
 
+$contentType = $_SERVER["CONTENT_TYPE"];
+
+// Checka contentType
+if ($contentType !== "application/json") {
+    sendJson(
+        ["message" => "The API only accepts JSON"],
+        400
+    );
+}
+
 if($requestMethod === "POST" && isset($_POST)) {
  
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande

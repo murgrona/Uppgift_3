@@ -13,7 +13,17 @@ if($requestMethod === "PUT") {
         "code" => 4,
         "Message" => "Method not allowed"], 405);
 }
-//
+
+$contentType = $_SERVER["CONTENT_TYPE"];
+
+// Checka contentType
+if ($contentType !== "application/json") {
+    sendJson(
+        ["message" => "The API only accepts JSON"],
+        400
+    );
+}
+
 if($requestMethod === "POST" && isset($_POST)) {
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
     if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_company"])) {
@@ -73,7 +83,7 @@ if($requestMethod === "POST" && isset($_POST)) {
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
 
-   /* $contentType = $_SERVER["CONTENT_TYPE"];
+   $contentType = $_SERVER["CONTENT_TYPE"];
 
     // Checka contentType
     if ($contentType !== "application/json") {
@@ -81,6 +91,6 @@ if($requestMethod === "POST" && isset($_POST)) {
         ["message" => "The API only accepts JSON"],
         400
     );
-    }*/
+    }
 }
 ?>
