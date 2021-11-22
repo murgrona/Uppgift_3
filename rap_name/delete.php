@@ -37,13 +37,14 @@ if ($requestMethod === "DELETE") {
         sendJson(
             [
                 "code" => 2,
-                "message" => "The rapper by `id` does not exist"
+                "message" => "The rapper by this id = {$id}, does not exist"
             ],
             404
         );
     }
     // Uppdaterar filen
     saveJson("../rap_name.json", $rappers);
-    sendJson(["id" => $id]);
+    sendJson([
+        "Message" => "sucessfully deleted rapper with id = {$id}"]);
 };
 ?>
