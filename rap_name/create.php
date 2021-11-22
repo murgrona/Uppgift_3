@@ -14,7 +14,7 @@ if($requestMethod === "PUT") {
         "Message" => "Method not allowed"], 405);
 }
 
-if($requestMethod === "POST") {
+if($requestMethod === "POST" && isset($_POST)) {
     
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
     if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_id"])) {
@@ -55,33 +55,34 @@ if($requestMethod === "POST") {
 
     $recordCompanies = loadJson("../record_company.json");//hämta record_company JSON
 
-    $id = $newRapper["record_company"]; // är rätt
+    $id = $newRapper["record_company"]; 
     $found = false;
 
     foreach($recordCompanies as $index => $recordCompany) { //kontrollera så att det finns ett id-skivbolag som rapparen kan tillhöra
         $recordIds = $recordCompany["id"];
+
         if($recordIds === $id) {
             $found = true;
             var_dump($found);
             array_push($rapNames, $newRapper);
         }
-    }if($found == false) {
-        sendJson([
-            "code" => 4,
-            "Message" => "This company ID does not exist, please try again"], 400);
-            exit();
+        }if($found == false) {
+            sendJson([
+                "code" => 4,
+                "Message" => "This company ID does not exist, please try again"], 400);
+                exit();
     }
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
 
-   
+   /* $contentType = $_SERVER["CONTENT_TYPE"];
 
-    /*if(str_contains($requestData["record_id"], '""')) {
-    sendJson([
-        "code" => 2,
-        "Message" => "Cannot contain '' ",
-    ], 400);
-    exit();
-}*/
+    // Checka contentType
+    if ($contentType !== "application/json") {
+    sendJson(
+        ["message" => "The API only accepts JSON"],
+        400
+    );
+    }*/
 }
 ?>
