@@ -1,5 +1,10 @@
 <?php
 
+//code 1 = METHOD NOT ALLOWED
+//code 2 = ONLY ACCEPT JSON
+//code 3 = FIELD REQUIREMENTS
+//code 4 = ID ISSUES
+
 error_reporting(-1);
 require_once "../functions.php";
 
@@ -10,7 +15,7 @@ $requestData = json_decode($data, true);
 //Om metoden är PUT, följande felmeddelande
 if($requestMethod === "PUT") {
     sendJson([
-        "code" => 4,
+        "code" => 1,
         "Message" => "Method not allowed"], 405);
 }
 
@@ -18,8 +23,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 // Checka contentType
 if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
+    sendJson([ 
+        "code" => 2,
+        "message" => "The API only accepts JSON"
+        ],
         400
     );
 }
@@ -28,13 +35,13 @@ if($requestMethod === "POST" && isset($_POST)) {
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
     if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_company"])) {
         sendJson([
-            "code" => 1,
+            "code" => 3,
             "Message" => "All fields need to be complete"], 400);
             exit();
     }
     if (strlen($requestData["title"]) < 2 || strlen($requestData["rap_name"]) < 2|| strlen($requestData["spirit_animal"]) < 2 || strlen($requestData["gender"]) < 2) {
         sendJson([
-            "code" => 2,
+            "code" => 3,
             "Message" => "Field needs to contain at least 2 characters",
         ], 400);
         exit();

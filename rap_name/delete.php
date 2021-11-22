@@ -16,9 +16,11 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 // Checka contentType
 if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
-        400
+    sendJson([ 
+        "code" => 2,
+        "message" => "The API only accepts JSON"
+    ],
+    400
     );
 }
 
@@ -27,7 +29,7 @@ if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
         sendJson(
             [
-            "code" => 1,
+            "code" => 3,
             "message" => "missing id"
             ],
             400
@@ -47,7 +49,7 @@ if ($requestMethod === "DELETE") {
     if ($found === false) {
         sendJson(
             [
-                "code" => 2,
+                "code" => 4,
                 "message" => "The rapper by this id = {$id}, does not exist"
             ],
             404

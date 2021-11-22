@@ -84,7 +84,7 @@ if ($requestMethod === "GET") {
         if ($found === false) {
             sendJson(
                 [
-                    "code" => 2,
+                    "code" => 4,
                     "message" => "Does not exist"
                 ],
                 404

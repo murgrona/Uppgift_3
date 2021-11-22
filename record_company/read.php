@@ -41,7 +41,7 @@ if ($requestMethod === "GET") {
         if($found === false) {
             sendJson(
             [
-                "code" => 2,
+                "code" => 4,
                 "message" => "Company does not exist"
             ],
             404
@@ -49,16 +49,6 @@ if ($requestMethod === "GET") {
         }
         sendJson($recordId);
         
-        /*if($_GET["ids"] !== $record["id"]) {
-            $found = false;
-            sendJson(
-                [
-                    "code" => 2,
-                    "message" => "Company does not exist"
-                ],
-                404
-            );
-        }  */
     }
     // Hämta alla skivbolag
     sendJson($records);

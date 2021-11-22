@@ -10,7 +10,7 @@ $requestData = json_decode($data, true);
 //Om metoden är PUT, följande felmeddelande
 if($requestMethod === "PUT") {
     sendJson([
-        "code" => 4,
+        "code" => 1,
         "Message" => "Method not allowed"], 405);
 }
 
@@ -18,8 +18,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 // Checka contentType
 if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
+    sendJson([ 
+        "code" => 2,
+        "message" => "The API only accepts JSON"
+        ],
         400
     );
 }
@@ -30,13 +32,13 @@ if($requestMethod === "POST" && isset($_POST)) {
     if(!isset($requestData["record_company"]) || !isset($requestData["country"]) || !isset($requestData["email"]) || !isset($requestData["year"])) {
         var_dump(isset($requestData["record_company"]));
         sendJson([
-            "code" => 1,
+            "code" => 3,
             "Message" => "All fields need to be complete"], 400);
             exit();
     }
     if (strlen($requestData["record_company"]) < 2 || strlen($requestData["country"]) < 2|| strlen($requestData["email"]) < 2 || strlen($requestData["year"]) < 2) {
         sendJson([
-            "code" => 2,
+            "code" => 3,
             "Message" => "Field needs to contain at least 2 characters",
         ], 400);
         exit();
@@ -66,7 +68,7 @@ if($requestMethod === "POST" && isset($_POST)) {
    
     if($find == false) {
         sendJson([
-            "code" => 2,
+            "code" => 3,
             "Message" => "Email needs to contain @"
         ], 400);
         exit();
@@ -76,7 +78,7 @@ if($requestMethod === "POST" && isset($_POST)) {
     $year = $newRecord["year"];
     if(!is_numeric($year)){
         sendJson([
-            "code" => 2,
+            "code" => 3,
             "Message" => "Year needs to be in numbers"
         ], 400);
         exit();

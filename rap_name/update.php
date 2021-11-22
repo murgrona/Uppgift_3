@@ -19,8 +19,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 // Checka contentType
 if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
+    sendJson([ 
+        "code" => 2,
+        "message" => "The API only accepts JSON"
+        ],
         400
     );
 }
@@ -35,28 +37,28 @@ if($requestMethod == "PATCH") {
                     $rapper["title"] = $requestData["title"];
                 }else {
                     sendJson([
-                         "code" => 1,
+                         "code" => 3,
                          "Message" => "All fields need to be complete, add title"], 400);
                  }
                 if(isset($requestData["rap_name"])) {
                     $rapper["rap_name"] = $requestData["rap_name"];
                 }else {
                     sendJson([
-                         "code" => 1,
+                         "code" => 3,
                          "Message" => "All fields need to be complete, add rap name"], 400);
                  }
                 if(isset($requestData["spirit_animal"])) {
                     $rapper["spirit_animal"] = $requestData["spirit_animal"];
                 }else {
                     sendJson([
-                         "code" => 1,
+                         "code" => 3,
                          "Message" => "All fields need to be complete, add spirit animal"], 400);
                  }
                 if(isset($requestData["gender"])) {
                     $rapper["gender"] = $requestData["gender"];
                 }else {
                     sendJson([
-                         "code" => 1,
+                         "code" => 3,
                          "Message" => "All fields need to be complete, add gender"], 400);
                  }
                 
@@ -64,7 +66,7 @@ if($requestMethod == "PATCH") {
                    $rapper["record_company"] = $requestData["record_company"];
                 } else {
                    sendJson([
-                        "code" => 1,
+                        "code" => 3,
                         "Message" => "All fields need to be complete, add record company ID"], 400);
                 }
 
@@ -76,7 +78,10 @@ if($requestMethod == "PATCH") {
         }
     
     if ($found == false){
-        sendJson(["message" => "ID not found."], 404);
+        sendJson([
+            "code" => 4,
+            "message" => "ID not found."], 
+        404);
     }
     
     saveJson("../rap_name.json", $rappers);

@@ -19,8 +19,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 
 // Checka contentType
 if ($contentType !== "application/json") {
-    sendJson(
-        ["message" => "The API only accepts JSON"],
+    sendJson([ 
+        "code" => 2,
+        "message" => "The API only accepts JSON"
+        ],
         400
     );
 }
@@ -30,7 +32,7 @@ if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
         sendJson(
             [
-            "code" => 1,
+            "code" => 3,
             "message" => "missing id"
             ],
             400
@@ -60,8 +62,8 @@ if ($requestMethod === "DELETE") {
     if ($found === false) {
         sendJson(
             [
-                "code" => 2,
-                "message" => "The record Company does not exist"
+                "code" => 4,
+                "message" => "The record company does not exist"
             ],
             404 
         );
@@ -71,7 +73,6 @@ if ($requestMethod === "DELETE") {
     saveJson("../record_company.json", $records);
     saveJson("../rap_name.json", $rapNames);
     sendJson([
-        "code" => 1,
         "Message" => "Sucessfully deleted both record company with id = {$id} and rappers with same id" ], 200);
 };
 ?>
