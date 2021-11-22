@@ -50,12 +50,12 @@ if($requestMethod == "PATCH") {
                          "Message" => "All fields need to be complete, add gender"], 400);
                  }
                 
-                if(isset($requestData["record_id"])) {
-                   $rapper["record_id"] = [$requestData["record_id"]];
+                if(isset($requestData["record_company"])) {
+                   $rapper["record_company"] = $requestData["record_company"];
                 } else {
                    sendJson([
                         "code" => 1,
-                        "Message" => "All fields need to be complete, add record ID"], 400);
+                        "Message" => "All fields need to be complete, add record company ID"], 400);
                 }
 
                 $rappers[$index] = $rapper;
