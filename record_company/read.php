@@ -26,17 +26,30 @@ if ($requestMethod === "GET") {
         $slicedRecord = array_slice($records, 0, $limit);
         sendJson($slicedRecord);
     }
+    $found = false;
     // Hämta skivbolag beroende på id
     if (isset($_GET["ids"])) {
+        $found = true;
+        var_dump($found);
         $ids = explode(",",$_GET["ids"]);
         $recordId = [];
 
         foreach ($records as $record) {
             if (in_array($record["id"], $ids)) {
                 $recordId[] = $record;
+                sendJson($recordId);
             }
         }
-        sendJson($recordId);
+        if($_GET["ids"] !== $record["id"]) {
+            $found = false;
+            sendJson(
+                [
+                    "code" => 2,
+                    "message" => "Company does not exist"
+                ],
+                404
+            );
+        }  
     }
     // Hämta alla skivbolag
     sendJson($records);
