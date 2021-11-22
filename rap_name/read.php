@@ -1,4 +1,7 @@
 <?php
+//ids
+//titles
+//includes
 error_reporting(-1);
 
 require_once "../functions.php";
@@ -70,11 +73,11 @@ if ($requestMethod === "GET") {
  
     // Hämta rappare beroende på id
     if (isset($_GET["ids"])) {
-        $found = true;
         $ids = explode(",",$_GET["ids"]);
         $rappersId = [];
         foreach ($rappers as $rapper) {
             if (in_array($rapper["id"], $ids)) {
+                $found = true;
                 $rappersId[] = $rapper;
             }
         }
