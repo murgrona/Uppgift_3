@@ -38,28 +38,40 @@ if($requestMethod == "PATCH") {
                 }else {
                     sendJson([
                         "code" => 3,
-                        "Message" => "All fields need to be complete, add title"], 400);
+                        "Message" => "All fields need to be complete, add title"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["rap_name"])) {
                     $rapper["rap_name"] = $requestData["rap_name"];
                 }else {
                     sendJson([
                         "code" => 3,
-                        "Message" => "All fields need to be complete, add rap name"], 400);
+                        "Message" => "All fields need to be complete, add rap name"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["spirit_animal"])) {
                     $rapper["spirit_animal"] = $requestData["spirit_animal"];
                 }else {
                     sendJson([
                         "code" => 3,
-                        "Message" => "All fields need to be complete, add spirit animal"], 400);
+                        "Message" => "All fields need to be complete, add spirit animal"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["gender"])) {
                     $rapper["gender"] = $requestData["gender"];
                 }else {
                     sendJson([
                         "code" => 3,
-                        "Message" => "All fields need to be complete, add gender"], 400);
+                        "Message" => "All fields need to be complete, add gender"],
+                        400
+                    );
+                    exit();
                 }
                 
                 if(isset($requestData["record_company"])) {
@@ -67,7 +79,10 @@ if($requestMethod == "PATCH") {
                 } else {
                    sendJson([
                         "code" => 3,
-                        "Message" => "All fields need to be complete, add record company ID"], 400);
+                        "Message" => "All fields need to be complete, add record company ID"],
+                        400
+                    );
+                    exit();
                 }
 
                 $rappers[$index] = $rapper;

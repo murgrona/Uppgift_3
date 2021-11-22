@@ -18,10 +18,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 if ($contentType !== "application/json") {
     sendJson([ 
         "code" => 2,
-        "message" => "The API only accepts JSON"
-    ],
-    400
+        "Message" => "The API only accepts JSON"],
+        400
     );
+    exit();
 }
 
 //Radera baserat på id
@@ -29,10 +29,12 @@ if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
         sendJson([
             "code" => 3,
-            "message" => "missing id"],
+            "Message" => "missing id"],
             404
         );
+        exit();
     }
+    
     $id = $requestData["id"];
     
     $found = false;
@@ -48,10 +50,11 @@ if ($requestMethod === "DELETE") {
         sendJson(
             [
                 "code" => 4,
-                "message" => "The rapper by this id = {$id}, does not exist"
+                "Message" => "The rapper by this id = {$id}, does not exist"
             ],
             404
         );
+        exit();
     }
     // Uppdaterar filen
     saveJson("../rap_name.json", $rappers);

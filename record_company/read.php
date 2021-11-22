@@ -41,13 +41,12 @@ if ($requestMethod === "GET") {
         if($found === false) {
             sendJson([
                 "code" => 4,
-                "message" => "Company does not exist"],
-            404
+                "Message" => "Company does not exist"],
+                404
             );
             exit();
         }
-        sendJson($recordId);
-        
+        sendJson($recordId); 
     }
     // Hämta alla skivbolag
     sendJson($records);

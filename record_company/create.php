@@ -23,8 +23,7 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 if ($contentType !== "application/json") {
     sendJson([ 
         "code" => 2,
-        "message" => "The API only accepts JSON"
-        ],
+        "message" => "The API only accepts JSON"],
         400
     );
     exit();
@@ -38,14 +37,16 @@ if($requestMethod === "POST" && isset($_POST)) {
         sendJson([
             "code" => 3,
             "Message" => "All fields need to be complete"],
-            400);
+            400
+        );
         exit();
     }
     if (strlen($requestData["record_company"]) < 2 || strlen($requestData["country"]) < 2|| strlen($requestData["email"]) < 2 || strlen($requestData["year"]) < 2) {
         sendJson([
             "code" => 3,
             "Message" => "Field needs to contain at least 2 characters"],
-            400);
+            400
+        );
         exit();
     }
  
@@ -74,8 +75,9 @@ if($requestMethod === "POST" && isset($_POST)) {
     if($find == false) {
         sendJson([
             "code" => 3,
-            "Message" => "Email needs to contain @"
-        ], 400);
+            "Message" => "Email needs to contain @"],
+            400
+        );
         exit();
     }
     
@@ -84,8 +86,9 @@ if($requestMethod === "POST" && isset($_POST)) {
     if(!is_numeric($year)){
         sendJson([
             "code" => 3,
-            "Message" => "Year needs to be in numbers"
-        ], 400);
+            "Message" => "Year needs to be in numbers"],
+            400
+        );
         exit();
     }
 

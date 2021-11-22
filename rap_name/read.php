@@ -83,11 +83,9 @@ if ($requestMethod === "GET") {
             }
         }
         if ($found === false) {
-            sendJson(
-                [
-                    "code" => 4,
-                    "message" => "ID does not exist"
-                ],
+            sendJson([
+                "code" => 4,
+                "Message" => "ID does not exist"],
                 404
             );
             exit();

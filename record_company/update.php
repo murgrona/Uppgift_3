@@ -21,10 +21,10 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 if ($contentType !== "application/json") {
     sendJson([ 
         "code" => 2,
-        "message" => "The API only accepts JSON"
-        ],
+        "message" => "The API only accepts JSON"],
         400
     );
+    exit();
 }
 
 if($requestMethod == "PATCH") {
@@ -36,29 +36,41 @@ if($requestMethod == "PATCH") {
                     $record["record_company"] = $requestData["record_company"];
                 }else {
                     sendJson([
-                         "code" => 3,
-                         "Message" => "All fields need to be complete, add record company"], 400);
+                        "code" => 3,
+                        "Message" => "All fields need to be complete, add record company"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["country"])) {
                     $record["country"] = $requestData["country"];
                 }else {
                     sendJson([
-                         "code" => 3,
-                         "Message" => "All fields need to be complete, add country"], 400);
+                        "code" => 3,
+                        "Message" => "All fields need to be complete, add country"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["email"])) {
                     $record["email"] = $requestData["email"];
                 }else {
                     sendJson([
-                         "code" => 3,
-                         "Message" => "All fields need to be complete, add email"], 400);
+                        "code" => 3,
+                        "Message" => "All fields need to be complete, add email"],
+                        400
+                    );
+                    exit();
                  }
                 if(isset($requestData["year"])) {
                     $record["year"] = $requestData["year"];
                 }else {
                     sendJson([
-                         "code" => 3,
-                         "Message" => "All fields need to be complete, add year"], 400);
+                        "code" => 3,
+                        "Message" => "All fields need to be complete, add year"],
+                        400
+                    );
+                    exit();
                  }
     
                 
@@ -72,8 +84,10 @@ if($requestMethod == "PATCH") {
     if ($found == false){
         sendJson([
             "code"=> 4,
-            "message" => "ID not found."], 
-        404);
+            "Message" => "ID not found."], 
+            404
+        );
+        exit();
     }
 
     $email = $requestData["email"];

@@ -21,22 +21,21 @@ $contentType = $_SERVER["CONTENT_TYPE"];
 if ($contentType !== "application/json") {
     sendJson([ 
         "code" => 2,
-        "message" => "The API only accepts JSON"
-        ],
+        "Message" => "The API only accepts JSON"],
         400
     );
+    exit();
 }
 
 //Radera baserat på id
 if ($requestMethod === "DELETE") {
     if (!isset($requestData["id"])) {
-        sendJson(
-            [
+        sendJson([
             "code" => 3,
-            "message" => "missing id"
-            ],
+            "Message" => "missing id"],
             404
         );
+        exit();
     }
 
     $id = $requestData["id"];
@@ -60,13 +59,12 @@ if ($requestMethod === "DELETE") {
         }
     }
     if ($found === false) {
-        sendJson(
-            [
-                "code" => 4,
-                "message" => "The record company id does not exist"
-            ],
+        sendJson([
+            "code" => 4,
+            "Message" => "The record company id does not exist"],
             404 
         );
+        exit();
     }
 
     // Uppdaterar filen
