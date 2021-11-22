@@ -13,11 +13,10 @@ if($requestMethod === "PUT") {
         "code" => 4,
         "Message" => "Method not allowed"], 405);
 }
-
+//
 if($requestMethod === "POST" && isset($_POST)) {
-    
     //kontrollerar om något av dessa inte finns med och isåfall skicka felmeddelande
-    if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_id"])) {
+    if(!isset($requestData["title"]) || !isset($requestData["rap_name"]) || !isset($requestData["spirit_animal"]) || !isset($requestData["gender"]) || !isset($requestData["record_company"])) {
         sendJson([
             "code" => 1,
             "Message" => "All fields need to be complete"], 400);
@@ -40,7 +39,7 @@ if($requestMethod === "POST" && isset($_POST)) {
         "rap_name" => $requestData["rap_name"],
         "spirit_animal" => $requestData["spirit_animal"],
         "gender" => $requestData["gender"],
-        "record_company" => $requestData["record_id"]
+        "record_company" => $requestData["record_company"]
     ];
     //få ut nytt ID
     $highestId = 0; 
@@ -63,15 +62,14 @@ if($requestMethod === "POST" && isset($_POST)) {
 
         if($recordIds === $id) {
             $found = true;
-            var_dump($found);
             array_push($rapNames, $newRapper);
         }
         }if($found == false) {
             sendJson([
                 "code" => 4,
                 "Message" => "This company ID does not exist, please try again"], 400);
-                exit();
-    }
+                exit(); 
+        }
     saveJson("../rap_name.json", $rapNames);
     sendJson($newRapper, 200);  
 

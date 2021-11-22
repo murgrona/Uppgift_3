@@ -17,7 +17,7 @@ if ($requestMethod === "GET") {
             if (in_array($rapT["title"], $rapTitle)) {
                 $titleArray[] = $rapT;
             }
-        }
+        }//ifall GET URL innehåller både limit och titles
         if(isset($_GET["limit"]) && isset($_GET["titles"])) {
             $limit = $_GET["limit"];
             $slicedRapperTitle = array_slice($titleArray, 0, $limit);

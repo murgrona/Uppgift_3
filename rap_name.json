@@ -230,5 +230,29 @@
         "spirit_animal": "Otter, north american river",
         "gender": "Agender",
         "record_company": 3
+    },
+    {
+        "title": "test",
+        "rap_name": "test",
+        "spirit_animal": "Stone test",
+        "gender": "test",
+        "record_company": 10,
+        "id": 31
+    },
+    {
+        "title": "test",
+        "rap_name": "test",
+        "spirit_animal": "Stone test",
+        "gender": "test",
+        "record_company": 10,
+        "id": 32
+    },
+    {
+        "title": "test",
+        "rap_name": "test",
+        "spirit_animal": "Stone test",
+        "gender": "test",
+        "record_company": 10,
+        "id": 33
     }
 ]
