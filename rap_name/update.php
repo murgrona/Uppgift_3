@@ -89,16 +89,17 @@ if($requestMethod == "PATCH") {
                 $foundRapper = $rapper;
                 break;
             }
+            
+        }
+        if ($found == false){
+            sendJson([
+                "code" => 4,
+                "message" => "ID not found."],
+                404
+            );
+            exit();
         }
     
-    if ($found == false){
-        sendJson([
-            "code" => 4,
-            "message" => "ID not found."],
-            404
-        );
-        exit();
-    }
     saveJson("../rap_name.json", $rappers);
     sendJson($foundRapper);
 }

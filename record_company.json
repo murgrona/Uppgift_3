@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "record_company": "Zemlak-Daugherty",
+        "record_company": "YEs",
         "country": "Sweden",
         "email": "zmattiello0@mlb.com",
-        "year": 1992
+        "year": 2021
     },
     {
         "id": 2,
@@ -204,13 +204,6 @@
     },
     {
         "id": 30,
-        "record_company": "Dickens, Quigley and Howe",
-        "country": "China",
-        "email": "drobbingst@constantcontact.com",
-        "year": 1987
-    },
-    {
-        "id": 32,
         "record_company": "Dickens, Quigley and Howe",
         "country": "China",
         "email": "drobbingst@constantcontact.com",

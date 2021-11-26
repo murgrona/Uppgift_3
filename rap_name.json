@@ -8,6 +8,14 @@
         "record_company": 17
     },
     {
+        "id": 2,
+        "title": "Mrs",
+        "rap_name": "Lakewood",
+        "spirit_animal": "Burmese black mountain tortoise",
+        "gender": "Female",
+        "record_company": 17
+    },
+    {
         "id": 3,
         "title": "Mrs",
         "rap_name": "Bunker Hill",
@@ -225,11 +233,11 @@
     },
     {
         "id": 30,
-        "title": "Dr",
-        "rap_name": "Fisk",
-        "spirit_animal": "Otter, north american river",
-        "gender": "Agender",
-        "record_company": 30
+        "title": "mr",
+        "rap_name": "Patch",
+        "spirit_animal": "cat",
+        "gender": "Male",
+        "record_company": 3
     },
     {
         "id": 31,
@@ -238,13 +246,5 @@
         "spirit_animal": "Otter, north american river",
         "gender": "Agender",
         "record_company": 31
-    },
-    {
-        "id": 31,
-        "title": "Dr",
-        "rap_name": "Fisk",
-        "spirit_animal": "Otter, north american river",
-        "gender": "Agender",
-        "record_company": 32
     }
 ]
